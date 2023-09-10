@@ -1,4 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		font-family: "Chivo", system-ui, sans-serif;
+		@apply text-body text-fem-secondary;
+	}
+	h1 {
+		@apply text-title uppercase text-white;
+	}
+}
 
