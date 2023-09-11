@@ -3,12 +3,20 @@
 
 	const email = ref("");
 	const error = ref(false);
+	const message = ref("");
 
 	const handleSubmit = () => {
 		const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 		if (regex.test(email.value)) {
 			error.value = false;
 		} else {
+			if (email.value === "") {
+				message.value = "Oops! Please add your email";
+				error.value = true;
+			} else {
+				message.value = "Oops! Please check your email";
+			}
+
 			error.value = true;
 		}
 	};
@@ -75,7 +83,7 @@
 				<span
 					v-if="error"
 					class="absolute text-fem-red text-xs font-bold leading-normal block mt-2 text-center w-full"
-					>Oops! Please check your email</span
+					>{{ message }}</span
 				>
 			</div>
 			<div
@@ -136,7 +144,7 @@
 						<span
 							v-if="error"
 							class="absolute text-fem-red text-xs font-bold leading-normal block ml-8 mt-2"
-							>Oops! Please check your email</span
+							>{{ message }}</span
 						>
 					</div>
 					<div class="flex gap-10 mt-16 items-center">
@@ -181,4 +189,3 @@
 		</div>
 	</div>
 </template>
-
