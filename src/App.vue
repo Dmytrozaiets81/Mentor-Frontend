@@ -79,7 +79,7 @@
 				>
 			</div>
 			<div
-				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] grayscale opacity-10 z-10"
+				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] grayscale opacity-10 z-10 bg-no-repeat bg-cover"
 			/>
 			<div
 				class="bottom-0 h-full w-full absolute bg-fem-primary mix-blend-multiply opacity-20 z-0"
