@@ -135,7 +135,7 @@
 							placeholder="Email address"
 						/>
 						<button
-							class="bg-fem-primary text-black font-bold text-sm rounded-[28px] py-[9px] px-[27px] leading-7 -ml-[168px] hover:bg-fem-primaryLight"
+							class="bg-fem-primary text-fem-base font-bold text-sm rounded-[28px] py-[9px] px-[27px] leading-7 -ml-[168px] hover:bg-fem-primaryLight"
 							type="button"
 							@click="handleSubmit"
 						>
