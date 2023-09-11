@@ -24,7 +24,7 @@
 
 <template>
 	<div
-		class="bg-fem-base h-screen text-body text-fem-secondary overflow-hidden"
+		class="bg-fem-base h-screen text-body text-fem-secondary overflow-auto"
 	>
 		<div class="flex flex-col md:hidden items-center justify-center p-6">
 			<img
@@ -147,19 +147,22 @@
 							>{{ message }}</span
 						>
 					</div>
-					<div class="flex gap-10 mt-16 items-center">
+					<div class="flex mt-16 items-center">
 						<img
 							src="./assets/desktop/spotify.svg"
 							alt="spotify"
 						/><img
 							src="./assets/desktop/apple-podcast.svg"
 							alt="Apple Podcast"
+							class="ml-10"
 						/><img
 							src="./assets/desktop/google-podcasts.svg"
 							alt="Google Podcasts"
+							class="ml-[41px]"
 						/><img
 							src="./assets/desktop/pocket-casts.svg"
 							alt="Pocket Casts"
+							class="ml-[27px]"
 						/>
 					</div>
 				</div>
