@@ -15,23 +15,30 @@
 </script>
 
 <template>
-	<div class="bg-fem-base h-screen text-body text-fem-secondary">
+	<div
+		class="bg-fem-base h-screen text-body text-fem-secondary overflow-hidden"
+	>
 		<div
-			class="max-w-[1440px] h-full mx-auto flex items-center justify-end"
+			class="w-full lg:max-w-[1440px] md:h-fit lg:h-full lg:mx-auto flex lg:items-center justify-end"
 		>
+			<img
+				src="./assets/desktop/bg-pattern-dots.svg"
+				alt="pattern"
+				class="absolute bottom-0 left-0 z-50 hidden md:block lg:hidden ml-[30px]"
+			/>
 			<div class="flex relative">
 				<img
-					class="absolute -mt-7"
+					class="absolute md:mt-[50px] lg:-mt-7"
 					src="./assets/desktop/logo.svg"
 					alt="logo"
 				/>
 				<img
 					src="./assets/desktop/bg-pattern-dots.svg"
 					alt="pattern"
-					class="absolute bottom-0 right-0 z-50 -mb-[52px]"
+					class="absolute bottom-0 right-0 z-50 -mb-[52px] hidden lg:block"
 				/>
 				<div
-					class="bg-fem-base w-[723px] flex flex-col items-start pt-[88px] self-end -mr-[338px] z-20"
+					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[338px] z-20"
 				>
 					<h1>
 						<span class="text-fem-primary block"
@@ -82,14 +89,25 @@
 					</div>
 				</div>
 
-				<div class="w-[888px] h-[640px] relative">
+				<div
+					class="md:w-[491px] md:h-[767px] lg:w-[888px] lg:h-[640px] relative"
+				>
 					<div
 						class="h-full w-full bg-fem-primary absolute opacity-[0.7993] mix-blend-multiply z-10"
 					/>
 					<img
 						src="./assets/desktop/image-host.jpg"
 						alt="host"
-						class="bg-cover grayscale mix-blend-screen"
+						class="bg-cover grayscale mix-blend-screen hidden lg:block"
+					/>
+					<img
+						src="./assets/tablet/image-host.jpg"
+						alt="host"
+						class="bg-cover grayscale mix-blend-screen hidden md:block lg:hidden"
+					/><img
+						src="./assets/mobile/image-host.jpg"
+						alt="host"
+						class="bg-cover grayscale mix-blend-screen block md:hidden"
 					/>
 				</div>
 			</div>
