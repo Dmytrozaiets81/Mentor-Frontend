@@ -18,8 +18,75 @@
 	<div
 		class="bg-fem-base h-screen text-body text-fem-secondary overflow-hidden"
 	>
+		<div class="flex flex-col md:hidden items-center justify-center p-6">
+			<img
+				class="mt-[38px] z-50"
+				src="./assets/desktop/logo.svg"
+				alt="logo"
+			/>
+			<h1 class="text-center mt-[57px] z-50">
+				<span class="text-fem-primary block"
+					>Publish your podcasts</span
+				>
+				everywhere.
+			</h1>
+			<div class="mt-4 text-[15px] leading-[25px] text-center z-50">
+				Upload your audio to Pod with a single click. We’ll then
+				distribute your podcast to Spotify, Apple Podcasts, Google
+				Podcasts, Pocket Casts and more!
+			</div>
+			<div class="flex items-center mt-[33px] z-50">
+				<img
+					src="./assets/desktop/spotify.svg"
+					alt="spotify"
+					class="h-[17px]"
+				/>
+				<img
+					src="./assets/desktop/apple-podcast.svg"
+					alt="Apple Podcast"
+					class="h-[17px] ml-[23px]"
+				/>
+				<img
+					src="./assets/desktop/google-podcasts.svg"
+					alt="Google Podcasts"
+					class="h-[11px] ml-[25px]"
+				/>
+				<img
+					src="./assets/desktop/pocket-casts.svg"
+					alt="Pocket Casts"
+					class="h-[15px] ml-4"
+				/>
+			</div>
+			<div class="relative mt-12 z-50">
+				<input
+					v-model="email"
+					@keyup.enter="handleSubmit"
+					type="email"
+					class="bg-fem-neutral rounded-[28px] w-full min-w-[327px] h-[46px] placeholder:text-white/50 text-sm pl-8 font-bold text-white focus:outline-0"
+					placeholder="Email address"
+				/>
+				<button
+					class="bg-fem-primary text-black font-bold min-w-[327px] text-sm rounded-[28px] w-full py-[9px] leading-7 hover:bg-fem-primaryLight mt-4"
+					type="button"
+					@click="handleSubmit"
+				>
+					Request Access
+				</button>
+				<span
+					v-if="error"
+					class="absolute text-fem-red text-xs font-bold leading-normal block mt-2 text-center w-full"
+					>Oops! Please check your email</span
+				>
+			</div>
+			<div
+				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] grayscale opacity-10 z-10"
+			/>
+			<div
+				class="bottom-0 h-full w-full absolute bg-fem-primary mix-blend-multiply opacity-20 z-0"
+			/>
+		</div>
 		<div
-			class="w-full lg:max-w-[1440px] md:h-fit lg:h-full lg:mx-auto flex lg:items-center justify-end"
+			class="hidden md:flex w-full lg:max-w-[1440px] md:h-fit lg:h-full lg:mx-auto lg:items-center justify-end"
 		>
 			<img
 				src="./assets/desktop/bg-pattern-dots.svg"
