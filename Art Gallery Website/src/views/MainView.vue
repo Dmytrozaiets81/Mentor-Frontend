@@ -1,3 +1,5 @@
 <script setup></script>
 
-<template></template>
+<template>
+	<div class="font-bold">hola</div>
+</template>
