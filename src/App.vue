@@ -113,7 +113,7 @@
 					class="absolute bottom-0 right-0 z-50 -mb-[52px] hidden lg:block"
 				/>
 				<div
-					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[337px] z-20"
+					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[335px] z-20"
 				>
 					<h1>
 						<span class="text-fem-primary block"
