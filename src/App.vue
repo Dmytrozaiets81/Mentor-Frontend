@@ -113,7 +113,7 @@
 					class="absolute bottom-0 right-0 z-50 -mb-[52px] hidden lg:block"
 				/>
 				<div
-					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[338px] z-20"
+					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[337px] z-20"
 				>
 					<h1>
 						<span class="text-fem-primary block"
@@ -135,7 +135,7 @@
 							placeholder="Email address"
 						/>
 						<button
-							class="bg-fem-primary text-fem-base font-bold text-sm rounded-[28px] py-[9px] px-[27px] leading-7 -ml-[168px] hover:bg-fem-primaryLight"
+							class="shadow-[0_2px_4px_0_rgba(84,230,175,0.14)] hover:shadow-none bg-fem-primary text-fem-base font-bold text-sm rounded-[28px] py-[9px] px-[27px] leading-7 -ml-[168px] hover:bg-fem-primaryLight"
 							type="button"
 							@click="handleSubmit"
 						>
@@ -192,3 +192,4 @@
 		</div>
 	</div>
 </template>
+
