@@ -176,7 +176,7 @@
 					<img
 						src="./assets/desktop/image-host.jpg"
 						alt="host"
-						class="bg-cover grayscale mix-blend-screen hidden lg:block"
+						class="bg-cover grayscale mix-blend-screen hidden lg:block contrast-[1.3]"
 					/>
 					<img
 						src="./assets/tablet/image-host.jpg"
