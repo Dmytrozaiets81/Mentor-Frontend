@@ -4,3 +4,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.headingXL {
+		@apply text-8xl font-black leading-[88px] text-fem-almostBlack uppercase font-heading;
+	}
+	.headingL {
+		@apply font-heading text-[70px] leading-[70px]  font-black uppercase text-fem-almostBlack;
+	}
+
+	.headingM {
+		@apply font-heading text-[60px] leading-[50px]  font-black uppercase text-fem-almostBlack;
+	}
+	.headingS {
+		@apply font-heading text-[36px] leading-[36px]  font-black uppercase text-fem-almostBlack;
+	}
+	.bodyM {
+		@apply font-sans text-[22px] leading-[32px] text-fem-darkGrey font-light;
+	}
+	.bodyS {
+		@apply font-sans text-[18px] leading-[28px] text-fem-almostBlack font-light;
+	}
+	.buttom {
+		@apply font-heading text-[20px] uppercase leading-none tracking-[3.636px] py-6 pl-8 pr-[35px] bg-fem-almostBlack text-white font-extrabold;
+	}
+}
