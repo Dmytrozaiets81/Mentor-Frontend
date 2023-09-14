@@ -8,7 +8,8 @@
 			<div class="flex flex-col items-center">
 				<img
 					src="/src/assets/mobile/image-hero.jpg"
-					alt="HeroImage" />
+					alt="HeroImage"
+					class="w-full" />
 				<div class="flex flex-col w-full gap-8 px-4 mt-8">
 					<h1 class="headingM leading-[55px] self-start">
 						MODERN<br />ART GALLERY
