@@ -4,28 +4,27 @@
 
 <template>
 	<div class="flex flex-col items-center justify-center w-full gap-[120px]">
-		<div>
-			<div class="flex flex-col items-center">
-				<img
-					src="/src/assets/mobile/image-hero.jpg"
-					alt="HeroImage"
-					class="w-full" />
-				<div class="flex flex-col w-full gap-8 px-4 mt-8">
-					<h1 class="headingM leading-[55px] self-start">
-						MODERN<br />ART GALLERY
-					</h1>
-					<p class="bodyS text-fem-darkGrey">
-						The arts in the collection of the Modern Art Gallery all
-						started from a spark of inspiration. Will these pieces
-						inspire you? Visit us and find out.
-					</p>
-					<Button
-						text="our location"
-						direction="right" />
-				</div>
+		<div class="flex flex-col items-center">
+			<img
+				src="/src/assets/mobile/image-hero.jpg"
+				alt="HeroImage"
+				class="w-screen" />
+			<div class="flex flex-col w-full gap-8 px-4 mt-8">
+				<h1 class="headingM leading-[55px] self-start">
+					MODERN<br />ART GALLERY
+				</h1>
+				<p class="bodyS text-fem-darkGrey">
+					The arts in the collection of the Modern Art Gallery all
+					started from a spark of inspiration. Will these pieces
+					inspire you? Visit us and find out.
+				</p>
+				<Button
+					text="our location"
+					direction="right"
+					route="/location" />
 			</div>
 		</div>
-		<div class="flex flex-col gap-8">
+		<div class="flex flex-col w-full gap-8">
 			<div class="flex flex-col gap-[25px] px-4">
 				<img
 					src="/src/assets/mobile/image-grid-1.jpg"
@@ -64,28 +63,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="">
-			<div class="flex flex-col px-8 py-12 bg-fem-almostBlack gap-[38px]">
+		<div
+			class="flex flex-col px-8 py-12 bg-fem-almostBlack gap-[38px] w-full">
+			<img
+				src="/src/assets/logo-light.svg"
+				alt="logo-light"
+				class="w-fit" />
+			<p class="bodyS text-base leading-[26px] text-white">
+				The Modern Art Gallery is free to all visitors and open seven
+				days a week from 8am to 9pm. Find us at 99 King Street, Newport,
+				USA.
+			</p>
+			<div class="flex w-[102px] justify-between">
 				<img
-					src="/src/assets/logo-light.svg"
-					alt="logo-light"
-					class="w-fit" />
-				<p class="bodyS text-base leading-[26px] text-white">
-					The Modern Art Gallery is free to all visitors and open
-					seven days a week from 8am to 9pm. Find us at 99 King
-					Street, Newport, USA.
-				</p>
-				<div class="flex w-[102px] justify-between">
-					<img
-						src="/src/assets/icon-facebook.svg"
-						alt="icon-facebook" />
-					<img
-						src="/src/assets/icon-instagram.svg"
-						alt="icon-instgram" />
-					<img
-						src="/src/assets/icon-twitter.svg"
-						alt="icon-twitter" />
-				</div>
+					src="/src/assets/icon-facebook.svg"
+					alt="icon-facebook" />
+				<img
+					src="/src/assets/icon-instagram.svg"
+					alt="icon-instgram" />
+				<img
+					src="/src/assets/icon-twitter.svg"
+					alt="icon-twitter" />
 			</div>
 		</div>
 	</div>

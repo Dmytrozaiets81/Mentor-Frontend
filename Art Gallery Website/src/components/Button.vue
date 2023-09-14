@@ -1,11 +1,11 @@
 <script setup>
-	const props = defineProps(["text", "direction"])
+	const props = defineProps(["text", "direction", "route"])
 </script>
 
 <template>
-	<a
+	<router-link
 		class="flex h-[72px] group w-fit"
-		href="#">
+		:to="route">
 		<div class="buttonBase">{{ text }}</div>
 		<div
 			class="buttonRibbon"
@@ -19,5 +19,5 @@
 				alt="icon-arrow-left"
 				v-if="direction === 'left'" />
 		</div>
-	</a>
+	</router-link>
 </template>
