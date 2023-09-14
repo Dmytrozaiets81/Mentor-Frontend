@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
 	.headingXL {
 		@apply text-8xl font-black leading-[88px] text-fem-almostBlack uppercase font-heading;
 	}
