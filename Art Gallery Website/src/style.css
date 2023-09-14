@@ -25,7 +25,10 @@
 	.bodyS {
 		@apply font-sans text-[18px] leading-[28px] text-fem-almostBlack font-light;
 	}
-	.buttom {
-		@apply font-heading text-[20px] uppercase leading-none tracking-[3.636px] py-6 pl-8 pr-[35px] bg-fem-almostBlack text-white font-extrabold;
+	.buttonBase {
+		@apply flex items-center font-heading text-[20px] uppercase leading-none tracking-[3.636px] pl-8 pr-[31.86px] bg-fem-almostBlack text-white font-extrabold group-hover:bg-fem-gold;
+	}
+	.buttonRibbon {
+		@apply w-14 bg-fem-gold flex items-center justify-center group-hover:bg-fem-almostBlack;
 	}
 }
