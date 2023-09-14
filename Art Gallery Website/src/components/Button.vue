@@ -4,7 +4,7 @@
 
 <template>
 	<a
-		class="flex h-[72px] group"
+		class="flex h-[72px] group w-fit"
 		href="#">
 		<div class="buttonBase">{{ text }}</div>
 		<div
