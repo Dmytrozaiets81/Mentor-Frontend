@@ -3,7 +3,7 @@
 </script>
 <template>
 	<div
-		class="flex flex-col px-8 py-12 gap-[38px] w-full md:flex-row md:pl-[39px] md:pr-10 md:py-14 md:justify-between md:items-start md:gap-0"
+		class="flex flex-col px-8 py-12 gap-[38px] w-full md:flex-row md:pl-[39px] md:pr-10 md:py-14 md:justify-between md:items-start md:gap-0 lg:px-[165px] lg:py-20"
 		:class="{
 			'bg-fem-almostBlack': color === 'black',
 			'bg-fem-gold': color === 'gold',
@@ -24,7 +24,7 @@
 				block: color === 'gold',
 			}" />
 		<p
-			class="bodyS text-base leading-[26px] md:w-[281px] md:ml-[64.95px] md:mr-[133px]"
+			class="bodyS text-base leading-[26px] md:w-[281px] lg:w-[430px] md:ml-[64.95px] md:mr-[133px] lg:ml-[140.43px] lg:mr-[280px] lg:text-[18px] lg:leading-[28px] lg:font-light"
 			:class="{
 				'text-white': color === 'black',
 				'text-fem-almostBlack': color === 'gold',

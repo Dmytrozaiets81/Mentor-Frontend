@@ -6,18 +6,21 @@
 @tailwind utilities;
 
 @layer components {
+	.ligature {
+		font-feature-settings: "clig" off, "liga" off;
+	}
 	.headingXL {
-		@apply text-8xl font-black leading-[88px] text-fem-almostBlack uppercase font-heading;
+		@apply text-8xl ligature font-black leading-[88px] text-fem-almostBlack uppercase font-heading;
 	}
 	.headingL {
-		@apply font-heading text-[70px] leading-[70px]  font-black uppercase text-fem-almostBlack;
+		@apply font-heading ligature text-[70px] leading-[70px]  font-black uppercase text-fem-almostBlack;
 	}
 
 	.headingM {
-		@apply font-heading text-[60px] leading-[50px]  font-black uppercase text-fem-almostBlack;
+		@apply font-heading ligature text-[60px] leading-[50px]  font-black uppercase text-fem-almostBlack;
 	}
 	.headingS {
-		@apply font-heading text-[36px] leading-[36px]  font-black uppercase text-fem-almostBlack;
+		@apply font-heading ligature text-[36px] leading-[36px]  font-black uppercase text-fem-almostBlack;
 	}
 	.bodyM {
 		@apply font-sans text-[22px] leading-[32px] text-fem-darkGrey font-light;
