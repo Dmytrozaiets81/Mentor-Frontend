@@ -1,5 +1,5 @@
 <script setup>
-	const props = defineProps(["text", "direction", "route"])
+	defineProps(["text", "direction", "route"])
 </script>
 
 <template>

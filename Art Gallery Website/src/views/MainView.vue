@@ -1,5 +1,6 @@
 <script setup>
 	import Button from "../components/Button.vue"
+	import FooterBase from "../components/FooterBase.vue"
 </script>
 
 <template>
@@ -95,29 +96,6 @@
 				</div>
 			</div>
 		</div>
-		<div
-			class="flex flex-col px-8 py-12 bg-fem-almostBlack gap-[38px] w-full md:flex-row md:pl-[39px] md:pr-10 md:py-14 md:justify-between md:items-start md:gap-0">
-			<img
-				src="/src/assets/logo-light.svg"
-				alt="logo-light"
-				class="w-fit" />
-			<p
-				class="bodyS text-base leading-[26px] text-white md:w-[281px] md:ml-[64.95px] md:mr-[133px]">
-				The Modern Art Gallery is free to all visitors and open seven
-				days a week from 8am to 9pm. Find us at 99 King Street, Newport,
-				USA.
-			</p>
-			<div class="flex w-[102px] md:w-[100px] justify-between">
-				<img
-					src="/src/assets/icon-facebook.svg"
-					alt="icon-facebook" />
-				<img
-					src="/src/assets/icon-instagram.svg"
-					alt="icon-instgram" />
-				<img
-					src="/src/assets/icon-twitter.svg"
-					alt="icon-twitter" />
-			</div>
-		</div>
+		<FooterBase color="black" />
 	</div>
 </template>
