@@ -1,0 +1,10 @@
+{
+	"bracketSameLine": true,
+	"arrowParens": "avoid",
+	"semi": false,
+	"tabWidth": 4,
+	"useTabs": true,
+	"singleAttributePerLine": true,
+	"vueIndentScriptAndStyle": true,
+	"plugins": ["prettier-plugin-tailwindcss"]
+}

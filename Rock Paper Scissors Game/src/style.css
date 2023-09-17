@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+@layer base {
+	.scissorsGradient {
+		@apply from-[#EC9E0E] to-[#ECA922];
+	}
+	.paperGradient {
+		@apply from-[#4865F4] to-[#5671F5];
+	}
+	.rockGradient {
+		@apply from-[#DC2E4E] to-[#DD405D];
+	}
+	.lizardGradient {
+		@apply from-[#834FE3] to-[#8C5DE5];
+	}
+	.cyanGradient {
+		@apply from-[#40B9CE] to-[#52BED1];
+	}
+	.bgGradient {
+		@apply from-[#1F3756] to-[#141539];
+	}
+}
