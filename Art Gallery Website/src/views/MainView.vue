@@ -13,7 +13,7 @@
 				MODERN<br />ART GALLERY
 			</h1>
 			<div
-				class="z-10 self-stretch hidden w-full bg-black lg:block"></div>
+				class="z-10 self-stretch hidden w-full bg-fem-almostBlack lg:block"></div>
 			<h1
 				class="z-0 absolute hidden text-white lg:block headingXL w-fit left-[165px] top-[189px]">
 				MODERN<br />ART GALLERY
