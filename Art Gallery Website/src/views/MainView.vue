@@ -121,7 +121,7 @@
 					<div
 						class="flex flex-col gap-6 px-6 py-12 bg-fem-almostBlack md:h-full md:py-[85px] md:pl-[29px] md:pr-7 lg:gap-8 lg:pl-12 lg:pr-[47px] lg:pt-[65px] lg:pb-16">
 						<h3
-							class="headingS text-[50px] leading-[45px] text-white lg:headingM lg:text-white">
+							class="headingS text-[50px] leading-[45px] text-white lg:headingM lg:leading-[60px] lg:text-white">
 							COME & BE INSPIRED
 						</h3>
 						<p class="text-white bodyS lg:bodyM lg:text-white">
