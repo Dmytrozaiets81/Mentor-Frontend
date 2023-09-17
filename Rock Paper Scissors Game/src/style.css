@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
-@tailwindcss base;
-@tailwindcss components;
-@tailwindcss utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@layer components {
+@layer base {
 	.scissorsGradient {
 		@apply from-[#EC9E0E] to-[#ECA922];
 	}
