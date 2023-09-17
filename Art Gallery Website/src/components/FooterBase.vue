@@ -11,7 +11,7 @@
 		<img
 			src="/src/assets/logo-light.svg"
 			alt="logo-light"
-			class="w-[159.572px]"
+			class="w-fit lg:w-[159.572px]"
 			:class="{
 				block: color === 'black',
 				hidden: color === 'gold',
