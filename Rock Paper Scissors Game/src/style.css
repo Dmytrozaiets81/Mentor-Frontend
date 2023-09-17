@@ -4,7 +4,7 @@
 @tailwindcss components;
 @tailwindcss utilities;
 
-@layer base {
+@layer components {
 	.scissorsGradient {
 		@apply from-[#EC9E0E] to-[#ECA922];
 	}
