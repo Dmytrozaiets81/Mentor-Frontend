@@ -12,7 +12,7 @@ This repository contains all the challenges I have completed from [Frontend Ment
 
 ## Pod Request Access Landing Page
 
-![](./Art%20Gallery%20Website/screenshots/preview.jpg)
+![](./Pod%20request%20access%20landing%20page/screenshots/preview.jpg)
 
 -   ### Live URL [Vercel Deploy](https://fem-pod-request-access-landing-page-juanescacha.vercel.app/)
 
