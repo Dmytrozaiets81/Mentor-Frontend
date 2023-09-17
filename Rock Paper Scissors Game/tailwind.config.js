@@ -14,10 +14,6 @@ export default {
 			fontFamily: {
 				sans: ["Barlow Semi Condensed", "sans-serif"],
 			},
-			fontSize: {
-				title: ["52px", "62px"],
-				body: ["18px", "28px"],
-			},
 			screens: {
 				sm: "375px",
 				lg: "1366px",
