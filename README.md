@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-This repository contains all the challenges I have completed from [Frontend Mentor](https://www.frontendmentor.io/).
+This repository contains all the challenges I have completed from [Frontend Mentor](https://www.frontendmentor.io/profile/Juanescacha).
 
 ## Challenges
 
