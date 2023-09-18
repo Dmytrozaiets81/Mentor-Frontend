@@ -3,7 +3,7 @@
 </script>
 <template>
 	<div
-		class="flex flex-col px-8 py-12 gap-[38px] w-full md:flex-row md:pl-[39px] md:pr-10 md:py-14 md:justify-between md:items-start md:gap-0 lg:px-[165px] lg:py-20"
+		class="flex w-full flex-col gap-[38px] px-8 py-12 md:flex-row md:items-start md:justify-between md:gap-0 md:py-14 md:pl-[39px] md:pr-10 lg:px-[165px] lg:py-20"
 		:class="{
 			'bg-fem-almostBlack': color === 'black',
 			'bg-fem-gold': color === 'gold',
@@ -24,7 +24,7 @@
 				block: color === 'gold',
 			}" />
 		<p
-			class="bodyS text-base leading-[26px] md:w-[281px] lg:w-[430px] md:ml-[64.95px] md:mr-[133px] lg:ml-[140.43px] lg:mr-[280px] lg:text-[18px] lg:leading-[28px] lg:font-light"
+			class="bodyS text-base leading-[26px] md:ml-[64.95px] md:mr-[133px] md:w-[281px] lg:ml-[140.43px] lg:mr-[280px] lg:w-[430px] lg:text-[18px] lg:font-light lg:leading-[28px]"
 			:class="{
 				'text-white': color === 'black',
 				'text-fem-almostBlack': color === 'gold',
@@ -33,7 +33,7 @@
 			week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
 		</p>
 		<div
-			class="w-[102px] md:w-[100px] justify-between"
+			class="w-[102px] justify-between md:w-[100px]"
 			:class="{
 				flex: color === 'black',
 				hidden: color === 'gold',
@@ -46,6 +46,7 @@
 				alt="icon-instgram" />
 			<img
 				src="/src/assets/icon-twitter.svg"
+				class="h-fit self-end"
 				alt="icon-twitter" />
 		</div>
 		<div
@@ -62,6 +63,7 @@
 				alt="icon-instgram-dark" />
 			<img
 				src="/src/assets/icon-twitter-dark.svg"
+				class="h-fit self-end"
 				alt="icon-twitter-dark" />
 		</div>
 	</div>
