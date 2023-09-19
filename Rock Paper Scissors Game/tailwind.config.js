@@ -6,7 +6,8 @@ export default {
 		extend: {
 			colors: {
 				fem: {
-					dark: "#3B4363",
+					dark: "#3B4262",
+					darkest: "#565468",
 					score: "#2A46C0",
 					header: "#606E85",
 				},

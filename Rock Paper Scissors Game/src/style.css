@@ -20,7 +20,15 @@
 	.cyanGradient {
 		@apply from-[#40B9CE] to-[#52BED1];
 	}
+	.whiteGradient {
+		background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+		box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+	}
 	.bgGradient {
-		@apply from-[#1F3756] to-[#141539];
+		background: radial-gradient(
+			134.34% 134.34% at 50% 0%,
+			#1f3757 0%,
+			#131537 100%
+		);
 	}
 }
