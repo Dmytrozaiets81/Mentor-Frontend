@@ -37,8 +37,7 @@
 
 <template>
 	<div
-		class="bgGradient flex h-screen flex-col items-center justify-between overflow-hidden px-8 pt-8 lg:px-[333px] lg:pb-40"
-		v-if="!rules">
+		class="bgGradient -z-10 flex h-screen flex-col items-center justify-between overflow-hidden px-8 pt-8 lg:px-[333px] lg:pb-[20vh] min-[1920px]:pb-[30vh]">
 		<Header
 			class="flex h-fit w-full items-center justify-between rounded-[5px] border-[3px] border-solid border-white/[0.29] py-3 pl-[23px] pr-3 lg:rounded-[15px]">
 			<img
@@ -123,7 +122,8 @@
 					class="w-[300px]"
 					:election="computerSelect" />
 			</div>
-			<div class="absolute bottom-0 mb-36 flex flex-col gap-4 lg:mb-56">
+			<div
+				class="absolute bottom-0 mb-36 flex flex-col gap-4 lg:mb-56 min-[1920px]:mb-80">
 				<div
 					class="textShadow text-center text-[56px] font-bold uppercase leading-[67px] text-white"
 					v-if="winner[0] && !winner[1]">
@@ -153,9 +153,10 @@
 		</button>
 	</div>
 	<div
-		class="flex h-screen w-full flex-col items-center justify-between pb-[66px] pt-[95px]"
+		class="absolute top-0 flex h-screen w-full flex-col items-center justify-between bg-white pb-[66px] pt-[95px] lg:left-1/2 lg:top-1/2 lg:h-fit lg:w-fit lg:-translate-x-1/2 lg:-translate-y-1/2 lg:gap-10 lg:rounded-lg lg:px-20 lg:py-10 lg:shadow-2xl"
 		v-if="rules">
-		<span class="text-[32px] font-bold uppercase leading-8 text-fem-dark"
+		<span
+			class="text-[32px] font-bold uppercase leading-8 text-fem-dark lg:self-start"
 			>rules</span
 		>
 		<img
@@ -164,7 +165,11 @@
 		<button @click="rules = false">
 			<img
 				src="./assets/icon-close.svg"
-				alt="close-icon" />
+				alt="close-icon"
+				class="p-5" />
 		</button>
 	</div>
 </template>
+
+<!-- class="flex h-screen w-full flex-col items-center justify-between pb-[66px] pt-[95px] lg:absolute lg:top-0 lg:h-1/2 lg:w-1/2 lg:translate-x-1/2 lg:translate-y-1/2 lg:rounded-lg"
+		v-if="rules"> -->
