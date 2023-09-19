@@ -6,7 +6,7 @@ This repository contains all the challenges I have completed from [Frontend Ment
 
 ![](./Art%20Gallery%20Website/screenshots/preview.jpg)
 
--   ### Live : ![Deploy](https://fem-art-gallery-website-juanescacha.vercel.app/)
+-   ### Live : [Deploy](https://fem-art-gallery-website-juanescacha.vercel.app/)
 -   ### Solution : [Github](https://github.com/Juanescacha/Frontend-Mentor/tree/main/Art%20Gallery%20Website)
 
 ## Pod Request Access Landing Page
