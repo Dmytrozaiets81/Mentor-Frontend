@@ -8,17 +8,20 @@
 		<img
 			src="../assets/item-rock.svg"
 			alt="item-rock"
+			class="w-full"
 			v-if="election === 1" />
 		<img
 			src="../assets/item-paper.svg"
 			alt="item-paper"
+			class="w-full"
 			v-if="election === 2" />
 		<img
 			src="../assets/item-scissors.svg"
 			alt="item-scissors"
+			class="w-full"
 			v-if="election === 3" />
 		<div
-			class="textShadow absolute mt-[17px] w-full text-[15px] font-bold uppercase leading-8 tracking-[1.875px] text-white">
+			class="textShadow absolute mt-[17px] w-full text-[15px] font-bold uppercase leading-8 tracking-[1.875px] text-white lg:top-0 lg:-mt-16 lg:text-2xl lg:tracking-[3px]">
 			you picked
 		</div>
 		<div
