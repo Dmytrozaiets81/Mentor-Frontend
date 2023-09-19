@@ -1,13 +1,44 @@
 <script setup>
 	import { ref } from "vue"
-	const score = ref(12)
+	import PlayerElection from "./components/PlayerElection.vue"
+	import ComputerElection from "./components/ComputerElection.vue"
+
+	const score = ref(0)
 	const rules = ref(false)
+	const gameOn = ref(false)
+	const userSelect = ref()
+	const computerSelect = ref()
+	const winner = ref([false, false])
+
+	const handleClick = select => {
+		gameOn.value = true
+		userSelect.value = select
+		game()
+	}
+
+	const game = () => {
+		const computer = Math.floor(Math.random() * 3) + 1
+		computerSelect.value = computer
+		if (userSelect.value === computer) {
+			winner.value = [false, false]
+		} else if (
+			(userSelect.value === 1 && computerSelect.value === 3) ||
+			(userSelect.value === 2 && computerSelect.value === 1) ||
+			(userSelect.value === 3 && compcomputerSelect.value === 2)
+		) {
+			winner.value = [true, false]
+			score.value++
+		} else {
+			winner.value = [false, true]
+			score.value--
+		}
+	}
 </script>
 
 <template>
 	<div
-		class="bgGradient h-screen flex-col items-center justify-between px-8 pt-8"
-		:class="{ flex: !rules, hidden: rules }">
+		class="bgGradient flex h-screen flex-col items-center justify-between overflow-hidden px-8 pt-8"
+		v-if="!rules">
 		<Header
 			class="flex h-fit w-full items-center justify-between rounded-[5px] border-[3px] border-solid border-white/[0.29] py-3 pl-[23px] pr-3">
 			<img
@@ -21,37 +52,77 @@
 					>score</span
 				>
 				<span
-					class="text-fem-darkest text-center text-[40px] font-bold leading-10"
+					class="text-center text-[40px] font-bold leading-10 text-fem-darkest"
 					>{{ score }}</span
 				>
 			</div>
 		</Header>
-		<Main class="flex w-full justify-center">
+		<div
+			class="flex w-full justify-center"
+			v-if="!gameOn">
 			<div class="relative h-fit w-fit">
 				<img
 					src="./assets/bg-triangle.svg"
 					alt="background_triangle"
 					class="h-[190px] w-[207px]" />
 				<button
-					class="absolute left-3 top-3 w-[130px] -translate-x-1/2 -translate-y-1/2">
+					class="absolute bottom-8 left-1/2 w-[130px] -translate-x-1/2 translate-y-1/2"
+					@click="handleClick(1)">
+					<img
+						src="./assets/item-rock.svg"
+						alt="item-rock" />
+				</button>
+				<button
+					class="absolute left-3 top-3 w-[130px] -translate-x-1/2 -translate-y-1/2"
+					@click="handleClick(2)">
 					<img
 						src="./assets/item-paper.svg"
 						alt="item-paper" />
 				</button>
 				<button
-					class="absolute right-3 top-3 w-[130px] -translate-y-1/2 translate-x-1/2">
+					class="absolute right-3 top-3 w-[130px] -translate-y-1/2 translate-x-1/2"
+					@click="handleClick(3)">
 					<img
 						src="./assets/item-scissors.svg"
 						alt="item-scissors" />
 				</button>
+			</div>
+		</div>
+		<div
+			class="flex w-full flex-col items-center"
+			v-if="gameOn">
+			<div class="relative h-fit w-fit">
+				<div class="h-[190px] w-[207px] opacity-0" />
+				<PlayerElection
+					:winner="winner[0]"
+					:election="userSelect" />
+				<ComputerElection
+					:winner="winner[1]"
+					:election="computerSelect" />
+			</div>
+			<div class="absolute top-[29rem] flex flex-col gap-4">
+				<div
+					class="textShadow text-center text-[56px] font-bold uppercase leading-[67px] text-white"
+					v-if="winner[0] && !winner[1]">
+					you win
+				</div>
+				<div
+					class="textShadow text-center text-[56px] font-bold uppercase leading-[67px] text-white"
+					v-if="!winner[0] && winner[1]">
+					you lose
+				</div>
+				<div
+					class="textShadow text-center text-[56px] font-bold uppercase leading-[67px] text-white"
+					v-if="!winner[0] && !winner[1]">
+					its a tie
+				</div>
 				<button
-					class="absolute bottom-8 left-1/2 w-[130px] -translate-x-1/2 translate-y-1/2">
-					<img
-						src="./assets/item-rock.svg"
-						alt="item-rock" />
+					class="whiteGradient w-full rounded-lg border border-white pb-[14px] pt-[15px] text-center text-base font-semibold uppercase leading-[19px] tracking-[2.5px] text-fem-dark"
+					@click="gameOn = false">
+					play again
 				</button>
 			</div>
-		</Main>
+		</div>
 		<button
 			@click="rules = true"
 			class="mb-14 w-fit rounded-lg border border-white pb-[10px] pl-[37px] pr-9 pt-[11px] text-center text-base font-semibold uppercase leading-[19px] tracking-[2.5px] text-white">
@@ -59,8 +130,8 @@
 		</button>
 	</div>
 	<div
-		class="h-screen w-full flex-col items-center justify-between pb-[66px] pt-[95px]"
-		:class="{ flex: rules, hidden: !rules }">
+		class="flex h-screen w-full flex-col items-center justify-between pb-[66px] pt-[95px]"
+		v-if="rules">
 		<span class="text-[32px] font-bold uppercase leading-8 text-fem-dark"
 			>rules</span
 		>
