@@ -2,13 +2,11 @@
 
 This repository contains all the challenges I have completed from [Frontend Mentor](https://www.frontendmentor.io/profile/Juanescacha).
 
-## Table of Contents
+## Challenges
 
--   [Frontend Mentor Challenges](#frontend-mentor-challenges)
-    -   [Table of Contents](#table-of-contents)
-    -   [Art Gallery Website](#art-gallery-website)
-    -   [Pod Request Access Landing Page](#pod-request-access-landing-page)
-    -   [Rock Paper Scissors Game](#rock-paper-scissors-game)
+-   [Art Gallery Website](#art-gallery-website)
+-   [Pod Request Access Landing Page](#pod-request-access-landing-page)
+-   [Rock Paper Scissors Game](#rock-paper-scissors-game)
 
 ## Art Gallery Website
 
