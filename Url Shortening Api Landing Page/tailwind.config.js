@@ -7,12 +7,14 @@ export default {
 			colors: {
 				primary: {
 					cyan: "#2BD0D0",
-					lightCyan: "#9AE3E3",
+					lightCyan: "#24b5bd",
+					lightestCyan: "#198a9c",
 					darkViolet: "#3A3054",
 					red: "#F46363",
 				},
 				neutral: {
 					gray: "#BFBFBF",
+					lightGray: "#EFF1F7",
 					grayishViolet: "#9E9AA8",
 					darkestBlue: "#34313D",
 					darkestViolet: "#232127",
