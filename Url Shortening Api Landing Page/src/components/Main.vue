@@ -70,7 +70,7 @@
 							id="shorten"
 							type="url"
 							v-model="shortenInput"
-							class="peer w-full rounded-[5px] border-none py-[6px] pl-4 text-base font-medium leading-9 tracking-[0.12px] text-neutral-darkestBlue ring-primary-cyan invalid:ring-primary-red focus:outline-none focus:ring-4 lg:mb-7 lg:h-16 lg:text-xl lg:leading-9 lg:tracking-[0.15px] lg:invalid:mb-0"
+							class="peer w-full rounded-[5px] border-none py-[6px] pl-4 text-base font-medium leading-9 tracking-[0.12px] text-neutral-darkestBlue ring-primary-cyan invalid:ring-primary-red focus:outline-none focus:ring-4 lg:mb-7 lg:h-16 lg:rounded-[10px] lg:pl-8 lg:text-xl lg:leading-9 lg:tracking-[0.15px] lg:invalid:mb-0"
 							pattern="https?://.+"
 							placeholder="Shorten a link here..." />
 						<p
@@ -80,7 +80,7 @@
 					</div>
 					<button
 						type="submit"
-						class="mx-auto mt-4 block w-full rounded-[5px] bg-primary-cyan pb-[10px] pt-[11px] text-lg font-bold leading-[27px] text-white hover:bg-primary-lightCyan active:bg-primary-lightestCyan lg:mt-0 lg:h-16 lg:w-1/5 lg:text-xl lg:leading-normal">
+						class="mx-auto mt-4 block w-full rounded-[5px] bg-primary-cyan pb-[10px] pt-[11px] text-lg font-bold leading-[27px] text-white hover:bg-primary-lightCyan active:bg-primary-lightestCyan lg:mt-0 lg:h-16 lg:w-1/5 lg:rounded-[10px] lg:text-xl lg:leading-normal">
 						Shorten It!
 					</button>
 				</form>
