@@ -33,7 +33,7 @@
 <template>
 	<main>
 		<section
-			class="mt-[23px] overflow-hidden px-6 lg:flex lg:gap-[100px] lg:pl-[165px]">
+			class="mt-[23px] overflow-hidden px-6 lg:mt-[78px] lg:flex lg:gap-[100px] lg:pl-[165px]">
 			<picture class="lg:order-2">
 				<source
 					media="(min-width: 1024px)"

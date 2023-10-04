@@ -17,7 +17,7 @@
 				</h1>
 			</a>
 			<div
-				class="relative ml-[41.43px] mr-auto hidden items-center gap-[32px] text-[15px] font-bold text-neutral-grayishViolet lg:flex">
+				class="relative ml-[41.43px] mr-auto hidden items-center gap-[32px] text-[15px] font-bold text-neutral-grayishViolet lg:flex lg:leading-normal">
 				<a
 					href="#"
 					class="hover:text-neutral-darkestBlue"
@@ -38,11 +38,11 @@
 			<div class="hidden items-center gap-[37px] lg:flex">
 				<a
 					href="#"
-					class="text-[15px] font-bold text-neutral-grayishViolet"
+					class="text-[15px] font-bold text-neutral-grayishViolet lg:leading-normal"
 					>Login</a
 				>
 				<button
-					class="rounded-[28px] bg-primary-cyan pb-[8px] pl-6 pr-[23px] pt-[9px] text-[15px] font-bold leading-[23px] text-white hover:bg-primary-lightCyan active:bg-primary-lightestCyan lg:block">
+					class="rounded-[28px] bg-primary-cyan pb-[8px] pl-6 pr-[23px] pt-[9px] text-[15px] font-bold leading-normal text-white hover:bg-primary-lightCyan active:bg-primary-lightestCyan lg:block">
 					Sign Up
 				</button>
 			</div>
