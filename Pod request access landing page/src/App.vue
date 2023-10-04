@@ -170,14 +170,14 @@
 				<div
 					class="md:w-[491px] md:h-[767px] lg:w-[888px] lg:h-[640px] relative"
 				>
-					<picture>
+					<picture class="bg-white">
 						<source
-							srcset="./assets/tablet/image-host.jpg"
-							media="(min-width: 768px)"
+							media="(min-width: 1440px)"
+							srcset="./assets/desktop/image-host.jpg"
 						/>
 						<source
-							srcset="./assets/desktop/image-host.jpg"
-							media="(min-width: 1440px)"
+							media="(min-width: 768px)"
+							srcset="./assets/tablet/image-host.jpg"
 						/>
 						<img
 							src="./assets/mobile/image-host.jpg"
