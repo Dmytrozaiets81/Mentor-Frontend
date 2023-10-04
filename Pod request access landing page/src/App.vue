@@ -170,26 +170,23 @@
 				<div
 					class="md:w-[491px] md:h-[767px] lg:w-[888px] lg:h-[640px] relative"
 				>
-					<div
-						class="h-full w-full bg-fem-primary absolute opacity-[0.7993] mix-blend-multiply z-10"
-					/>
-					<img
-						src="./assets/desktop/image-host.jpg"
-						alt="host"
-						class="bg-cover grayscale mix-blend-screen hidden lg:block contrast-[1.3]"
-					/>
-					<img
-						src="./assets/tablet/image-host.jpg"
-						alt="host"
-						class="bg-cover grayscale mix-blend-screen hidden md:block lg:hidden"
-					/><img
-						src="./assets/mobile/image-host.jpg"
-						alt="host"
-						class="bg-cover grayscale mix-blend-screen block md:hidden"
-					/>
+					<picture>
+						<source
+							srcset="./assets/tablet/image-host.jpg"
+							media="(min-width: 768px)"
+						/>
+						<source
+							srcset="./assets/desktop/image-host.jpg"
+							media="(min-width: 1440px)"
+						/>
+						<img
+							src="./assets/mobile/image-host.jpg"
+							alt="host person talking to a microphone"
+							class="bg-cover"
+						/>
+					</picture>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
-
