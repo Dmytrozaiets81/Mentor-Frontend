@@ -7,8 +7,8 @@ export default {
 			colors: {
 				primary: {
 					cyan: "#2BD0D0",
-					lightCyan: "#24b5bd",
-					lightestCyan: "#198a9c",
+					lightCyan: "#9AE3E3",
+					lightestCyan: "#C3EFEF",
 					darkViolet: "#3A3054",
 					red: "#F46363",
 				},
@@ -25,7 +25,7 @@ export default {
 			},
 			screens: {
 				sm: "375px",
-				lg: "1440px",
+				lg: "1024px",
 			},
 		},
 	},
