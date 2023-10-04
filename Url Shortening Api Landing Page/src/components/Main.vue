@@ -2,13 +2,7 @@
 	import { ref, reactive } from "vue"
 
 	const shortenInput = ref("")
-	const shortedLinks = reactive([
-		{
-			link: "google.com",
-			short: "bit.ly/1DFG2D",
-			copy: true,
-		},
-	])
+	const shortedLinks = reactive([])
 
 	const handleShortenLink = async () => {
 		if (shortenInput.value === "") {
@@ -39,7 +33,7 @@
 <template>
 	<main>
 		<section
-			class="mt-[23px] overflow-hidden px-6 lg:flex lg:gap-[102px] lg:pl-[165px]">
+			class="mt-[23px] overflow-hidden px-6 lg:flex lg:gap-[100px] lg:pl-[165px]">
 			<picture class="lg:order-2">
 				<source
 					media="(min-width: 1024px)"
