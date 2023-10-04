@@ -49,7 +49,7 @@
 					More than just shorter links
 				</h1>
 				<p
-					class="mt-[15px] text-center text-lg font-medium leading-[30px] tracking-[0.123px] text-neutral-grayishViolet lg:mt-[5px] lg:text-left">
+					class="mt-[15px] text-center text-lg font-medium leading-[30px] tracking-[0.123px] text-neutral-grayishViolet lg:mt-[5px] lg:text-left lg:text-[22px] lg:leading-9 lg:tracking-[0.15px]">
 					Build your brand’s recognition and get detailed insights on
 					how your links are performing.
 				</p>
@@ -59,7 +59,7 @@
 				</button>
 			</div>
 		</section>
-		<section class="relative mt-[88px] px-6 lg:px-[165px]">
+		<section class="relative mt-[88px] px-6 lg:mt-[68px] lg:px-[165px]">
 			<div
 				class="w-full rounded-[10px] bg-primary-darkViolet bg-[url('./assets/bg-shorten-mobile.svg')] bg-right-top bg-no-repeat p-6 lg:bg-[url('./assets/bg-shorten-desktop.svg')] lg:px-16 lg:pt-[52px]">
 				<form
