@@ -23,10 +23,12 @@
 </script>
 
 <template>
-	<div
+	<main
 		class="bg-fem-base h-screen text-body text-fem-secondary overflow-auto"
 	>
-		<div class="flex flex-col md:hidden items-center justify-center p-6">
+		<article
+			class="flex flex-col md:hidden items-center justify-center p-6"
+		>
 			<img
 				class="mt-[38px] z-50"
 				src="./assets/desktop/logo.svg"
@@ -43,29 +45,37 @@
 				distribute your podcast to Spotify, Apple Podcasts, Google
 				Podcasts, Pocket Casts and more!
 			</div>
-			<div class="flex items-center mt-[33px] z-50">
-				<img
-					src="./assets/desktop/spotify.svg"
-					alt="spotify"
-					class="h-[17px]"
-				/>
-				<img
-					src="./assets/desktop/apple-podcast.svg"
-					alt="Apple Podcast"
-					class="h-[17px] ml-[23px]"
-				/>
-				<img
-					src="./assets/desktop/google-podcasts.svg"
-					alt="Google Podcasts"
-					class="h-[11px] ml-[25px]"
-				/>
-				<img
-					src="./assets/desktop/pocket-casts.svg"
-					alt="Pocket Casts"
-					class="h-[15px] ml-4"
-				/>
-			</div>
-			<div class="relative mt-12 z-50">
+			<nav class="flex items-center mt-[33px] z-50">
+				<a href="#">
+					<img
+						src="./assets/desktop/spotify.svg"
+						alt="spotify"
+						class="h-[17px]"
+					/>
+				</a>
+				<a href="#">
+					<img
+						src="./assets/desktop/apple-podcast.svg"
+						alt="Apple Podcast"
+						class="h-[17px] ml-[23px]"
+					/>
+				</a>
+				<a href="#">
+					<img
+						src="./assets/desktop/google-podcasts.svg"
+						alt="Google Podcasts"
+						class="h-[11px] ml-[25px]"
+					/>
+				</a>
+				<a href="#">
+					<img
+						src="./assets/desktop/pocket-casts.svg"
+						alt="Pocket Casts"
+						class="h-[15px] ml-4"
+					/>
+				</a>
+			</nav>
+			<form class="relative mt-12 z-50">
 				<input
 					v-model="email"
 					@keyup.enter="handleSubmit"
@@ -85,15 +95,15 @@
 					class="absolute text-fem-red text-xs font-bold leading-normal block mt-2 text-center w-full"
 					>{{ message }}</span
 				>
-			</div>
+			</form>
 			<div
-				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] grayscale opacity-10 z-10 bg-no-repeat bg-cover"
+				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] opacity-10 z-10 bg-no-repeat bg-cover"
 			/>
 			<div
-				class="bottom-0 h-full w-full absolute bg-fem-primary mix-blend-multiply opacity-20 z-0"
+				class="bottom-0 h-full w-full absolute bg-fem-primary mix-blend-multiply opacity-0 z-0"
 			/>
-		</div>
-		<div
+		</article>
+		<article
 			class="hidden md:flex w-full lg:max-w-[1440px] md:h-fit lg:h-full lg:mx-auto lg:items-center justify-end"
 		>
 			<img
@@ -112,7 +122,7 @@
 					alt="pattern"
 					class="absolute bottom-0 right-0 z-50 -mb-[52px] hidden lg:block"
 				/>
-				<div
+				<section
 					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[336px] z-20"
 				>
 					<h1>
@@ -121,12 +131,12 @@
 						>
 						everywhere.
 					</h1>
-					<div class="mt-6 w-[445px]">
+					<p class="mt-6 w-[445px]">
 						Upload your audio to Pod with a single click. We’ll then
 						distribute your podcast to Spotify, Apple Podcasts,
 						Google Podcasts, Pocket Casts and more!
-					</div>
-					<div class="relative mt-10">
+					</p>
+					<form class="relative mt-10">
 						<input
 							v-model="email"
 							@keyup.enter="handleSubmit"
@@ -146,28 +156,39 @@
 							class="absolute text-fem-red text-xs font-bold leading-normal block ml-8 mt-2"
 							>{{ message }}</span
 						>
-					</div>
-					<div class="flex mt-16 items-center">
-						<img
-							src="./assets/desktop/spotify.svg"
-							alt="spotify"
-						/><img
-							src="./assets/desktop/apple-podcast.svg"
-							alt="Apple Podcast"
-							class="ml-10"
-						/><img
-							src="./assets/desktop/google-podcasts.svg"
-							alt="Google Podcasts"
-							class="ml-[41px]"
-						/><img
-							src="./assets/desktop/pocket-casts.svg"
-							alt="Pocket Casts"
-							class="ml-[27px]"
-						/>
-					</div>
-				</div>
+					</form>
+					<nav class="flex mt-16 items-center">
+						<a href="#">
+							<img
+								src="./assets/desktop/spotify.svg"
+								alt="spotify"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/desktop/apple-podcast.svg"
+								alt="Apple Podcast"
+								class="ml-10"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/desktop/google-podcasts.svg"
+								alt="Google Podcasts"
+								class="ml-[41px]"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/desktop/pocket-casts.svg"
+								alt="Pocket Casts"
+								class="ml-[27px]"
+							/>
+						</a>
+					</nav>
+				</section>
 
-				<div
+				<section
 					class="md:w-[491px] md:h-[767px] lg:w-[888px] lg:h-[640px] relative"
 				>
 					<picture class="bg-white">
@@ -185,8 +206,8 @@
 							class="bg-cover"
 						/>
 					</picture>
-				</div>
+				</section>
 			</div>
-		</div>
-	</div>
+		</article>
+	</main>
 </template>
