@@ -159,7 +159,7 @@
 					</p>
 				</article>
 				<article
-					class="lg:mt-22 relative mt-[92px] rounded-[5px] bg-white px-8 pb-[41px] lg:h-fit">
+					class="relative mt-[92px] rounded-[5px] bg-white px-8 pb-[41px] lg:mt-[88px] lg:h-fit">
 					<img
 						class="mx-auto -mt-11 lg:ml-0 lg:mr-auto"
 						src="../assets/fully-customizable.svg"
