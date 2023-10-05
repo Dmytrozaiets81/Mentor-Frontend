@@ -87,7 +87,7 @@
 			</div>
 		</section>
 		<section
-			class="-mt-20 bg-neutral-lightGray px-6 pb-20 pt-20 lg:px-[165px]">
+			class="-mt-20 bg-neutral-lightGray px-6 pb-20 pt-20 lg:px-[165px] lg:pb-[120px]">
 			<div
 				v-for="link in shortedLinks"
 				class="mt-6 flex flex-col rounded-[5px] bg-white pb-4 lg:flex-row lg:items-center lg:justify-between lg:py-[18px] lg:pl-8 lg:pr-6">

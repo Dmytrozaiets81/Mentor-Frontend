@@ -2,6 +2,7 @@
 	<footer
 		class="bg-neutral-darkestViolet pb-14 pt-[54px] lg:pb-[72px] lg:pl-[163px] lg:pr-[165px] lg:pt-[71px]">
 		<nav
+			aria-label="footer navigation links"
 			class="flex flex-col items-center gap-[38px] lg:flex-row lg:items-start lg:justify-center lg:gap-0">
 			<h1 class="mb-[11.33px] lg:mr-auto">
 				<img
