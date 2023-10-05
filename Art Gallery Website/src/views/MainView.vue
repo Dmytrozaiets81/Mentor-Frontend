@@ -4,7 +4,7 @@
 </script>
 
 <template>
-	<div
+	<main
 		class="flex w-full flex-col items-center justify-center gap-[120px] lg:gap-[180px]">
 		<div
 			class="relative flex flex-col items-center md:w-full md:flex-row lg:pr-[165px]">
@@ -134,5 +134,5 @@
 			</div>
 		</div>
 		<FooterBase color="black" />
-	</div>
+	</main>
 </template>

@@ -2,7 +2,7 @@
 	defineProps(["color"])
 </script>
 <template>
-	<div
+	<footer
 		class="flex w-full flex-col gap-[38px] px-8 py-12 md:flex-row md:items-start md:justify-between md:gap-0 md:py-14 md:pl-[39px] md:pr-10 lg:px-[165px] lg:py-20"
 		:class="{
 			'bg-fem-almostBlack': color === 'black',
@@ -66,5 +66,5 @@
 				class="h-fit self-end"
 				alt="icon-twitter-dark" />
 		</div>
-	</div>
+	</footer>
 </template>

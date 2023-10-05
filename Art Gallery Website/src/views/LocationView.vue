@@ -4,7 +4,7 @@
 </script>
 
 <template>
-	<div class="flex flex-col items-center justify-center w-full">
+	<main class="flex w-full flex-col items-center justify-center">
 		<div class="relative">
 			<Button
 				class="absolute md:left-[39px] lg:left-[156px]"
@@ -28,24 +28,24 @@
 				class="hidden w-screen lg:block" />
 		</div>
 		<div
-			class="flex flex-col w-full px-4 bg-fem-almostBlack pb-14 md:flex-row md:items-start md:pt-[88px] md:pb-[80px] md:pl-[39px] md:pr-[40px] md:gap-[68px] lg:px-[165px] lg:pt-[104px] lg:pb-32 lg:justify-between lg:gap-[220px]">
+			class="flex w-full flex-col bg-fem-almostBlack px-4 pb-14 md:flex-row md:items-start md:gap-[68px] md:pb-[80px] md:pl-[39px] md:pr-[40px] md:pt-[88px] lg:justify-between lg:gap-[220px] lg:px-[165px] lg:pb-32 lg:pt-[104px]">
 			<h2
-				class="text-white headingM text-[50px] leading-[45px] my-12 md:my-0 md:w-full lg:headingL lg:text-white lg:w-fit">
+				class="headingM lg:headingL my-12 text-[50px] leading-[45px] text-white md:my-0 md:w-full lg:w-fit lg:text-white">
 				our <br class="hidden lg:block" />
 				location
 			</h2>
 			<div class="flex flex-col gap-6 md:gap-5 lg:w-fit">
 				<h3
-					class="headingS text-[32px] leading-8 text-fem-gold lg:headingS lg:text-fem-gold lg:w-fit">
+					class="headingS lg:headingS text-[32px] leading-8 text-fem-gold lg:w-fit lg:text-fem-gold">
 					99 King Street
 				</h3>
-				<p class="text-white bodyS lg:bodyM lg:text-white lg:w-fit">
+				<p class="bodyS lg:bodyM text-white lg:w-fit lg:text-white">
 					Newport <br />
 					RI 02840 <br />
 					United States of America
 				</p>
 				<p
-					class="text-white bodyS md:w-[398px] lg:bodyM lg:text-white lg:w-[540px]">
+					class="bodyS lg:bodyM text-white md:w-[398px] lg:w-[540px] lg:text-white">
 					Our newly opened gallery is located near the Edward King
 					House on 99 King Street, the Modern Art Gallery is free to
 					all visitors and open seven days a week from 8am to 9pm.
@@ -53,5 +53,5 @@
 			</div>
 		</div>
 		<FooterBase color="gold" />
-	</div>
+	</main>
 </template>
