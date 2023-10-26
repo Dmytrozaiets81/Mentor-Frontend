@@ -1,0 +1,84 @@
+{
+	"title": "Social Media Dashboard",
+	"totalFollowers": "23,004",
+	"followers": [
+		{
+			"name": "facebook",
+			"username": "@nathanf",
+			"number": 1987,
+			"type": "followers",
+			"today": 12
+		},
+		{
+			"name": "twitter",
+			"username": "@nathanf",
+			"number": 1044,
+			"type": "followers",
+			"today": 99
+		},
+		{
+			"name": "instagram",
+			"username": "@realnathanf",
+			"number": 11000,
+			"type": "followers",
+			"today": 1099
+		},
+		{
+			"name": "youtube",
+			"username": "Nathan F.",
+			"number": 8239,
+			"type": "subscribers",
+			"today": -144
+		}
+	],
+	"todayOverview": [
+		{
+			"type": "facebook",
+			"name": "page views",
+			"number": 87,
+			"progress": 3
+		},
+		{
+			"type": "facebook",
+			"name": "likes",
+			"number": 52,
+			"progress": -2
+		},
+		{
+			"type": "instagram",
+			"name": "likes",
+			"number": 5462,
+			"progress": 2257
+		},
+		{
+			"type": "instagram",
+			"name": "profile views",
+			"number": 52000,
+			"progress": 1375
+		},
+		{
+			"type": "twitter",
+			"name": "retweets",
+			"number": 117,
+			"progress": 303
+		},
+		{
+			"type": "twitter",
+			"name": "likes",
+			"number": 507,
+			"progress": 553
+		},
+		{
+			"type": "youtube",
+			"name": "likes",
+			"number": 107,
+			"progress": -19
+		},
+		{
+			"type": "youtube",
+			"name": "total views",
+			"number": 1407,
+			"progress": -12
+		}
+	]
+}
