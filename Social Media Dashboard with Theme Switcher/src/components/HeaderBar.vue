@@ -133,10 +133,14 @@
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
-			align-items: center;
+			align-items: start;
 
 			&__title {
 				font-size: 1.75rem;
+			}
+
+			&__info {
+				padding-left: 0.09rem;
 			}
 
 			&__left {

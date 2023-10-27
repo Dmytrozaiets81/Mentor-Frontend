@@ -77,6 +77,7 @@
 			}
 			&__subtitle {
 				grid-column: 1 / -1;
+				margin-bottom: 0;
 			}
 		}
 	}
