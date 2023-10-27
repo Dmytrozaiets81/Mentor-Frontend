@@ -85,12 +85,12 @@
 					background-color: var(--card);
 					position: absolute;
 					top: 50%;
-					transform: translate(27px, -50%);
+					transform: translate(1.688rem, -50%);
 					border-radius: 50%;
-					width: 18px;
-					height: 18px;
+					width: 1.125rem;
+					height: 1.125rem;
 					&--active {
-						transform: translate(3px, -50%);
+						transform: translate(0.188rem, -50%);
 					}
 				}
 				&:hover {
