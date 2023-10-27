@@ -13,6 +13,7 @@
 		:totalFollowers="totalFollowers" />
 	<main class="main">
 		<section class="main__first-container">
+			<h2 class="sr-only">All Followers</h2>
 			<MainCard
 				v-for="card in followers"
 				:key="card.name"
