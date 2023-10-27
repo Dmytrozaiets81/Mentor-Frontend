@@ -133,8 +133,7 @@
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
-			align-items: start;
-
+			align-items: center;
 			&__title {
 				font-size: 1.75rem;
 			}
@@ -151,6 +150,7 @@
 
 			&__right {
 				gap: 0.8125rem;
+				margin-top: 0;
 			}
 		}
 	}
