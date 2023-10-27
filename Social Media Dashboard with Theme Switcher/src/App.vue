@@ -61,6 +61,7 @@
 			padding-bottom: 4.69rem;
 			padding-left: 10.31rem;
 			padding-right: 10.31rem;
+			margin-top: -6.75rem;
 
 			&__first-container {
 				flex-direction: row;

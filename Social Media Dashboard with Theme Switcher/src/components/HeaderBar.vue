@@ -128,6 +128,7 @@
 		.header {
 			padding-left: 10.31rem;
 			padding-right: 10.31rem;
+			padding-bottom: 9.62rem;
 			display: flex;
 			width: 100%;
 			justify-content: space-between;

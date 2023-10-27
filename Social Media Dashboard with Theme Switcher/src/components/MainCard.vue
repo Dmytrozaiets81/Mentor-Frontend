@@ -125,11 +125,14 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				gap: 0.56rem;
 			}
 			&__number {
 				color: var(--big-text);
 				font-size: 3.5rem;
 				font-weight: bold;
+				line-height: 3rem;
+				letter-spacing: -0.125rem;
 			}
 			&__type {
 				font-size: 0.75rem;
