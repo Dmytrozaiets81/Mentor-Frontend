@@ -11,7 +11,7 @@
 	// 	selector: "body",
 	// })
 	// const toggleDark = useToggle(isDark)
-	const toggle = ref(false)
+	const toggle = ref(true)
 
 	const handleToggle = () => {
 		toggle.value = !toggle.value
