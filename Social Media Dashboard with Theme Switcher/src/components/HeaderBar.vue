@@ -64,9 +64,10 @@
 
 			&__title {
 				color: var(--big-text);
-				font-size: 1.75rem;
+				font-size: 1.5rem;
 				font-weight: 700;
 				text-transform: capitalize;
+				line-height: normal;
 			}
 			&__info {
 				font-weight: 700;
@@ -133,6 +134,10 @@
 			width: 100%;
 			justify-content: space-between;
 			align-items: center;
+
+			&__title {
+				font-size: 1.75rem;
+			}
 
 			&__left {
 				flex-direction: column;
