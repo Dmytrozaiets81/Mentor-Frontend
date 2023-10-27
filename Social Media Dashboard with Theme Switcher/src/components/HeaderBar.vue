@@ -1,5 +1,5 @@
 <script setup>
-	// import { ref } from "vue"
+	import { ref } from "vue"
 	// import { useDark, useToggle } from "@vueuse/core"
 
 	const props = defineProps({
@@ -12,7 +12,10 @@
 	// })
 	// const toggleDark = useToggle(isDark)
 
+	const switchToggle = ref(true)
+
 	const handleToggle = () => {
+		switchToggle.value = !switchToggle.value
 		const body = document.querySelector("body")
 		body.classList.toggle("dark")
 		// isDark.value = !isDark.value
@@ -35,7 +38,7 @@
 			id="header__label"
 			@click="handleToggle">
 			<span class="header__label"
-				>{{ isDark ? "Light" : "Dark" }} Mode</span
+				>{{ switchToggle ? "Light" : "Dark" }} Mode</span
 			>
 			<button
 				class="header__toggle"
@@ -44,7 +47,9 @@
 				role="switch">
 				<div
 					class="header__toggle-circle"
-					:class="{ 'header__toggle-circle--active': toggle }"></div>
+					:class="{
+						'header__toggle-circle--active': switchToggle,
+					}"></div>
 			</button>
 		</div>
 	</header>
