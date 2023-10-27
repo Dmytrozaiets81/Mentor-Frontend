@@ -7,11 +7,11 @@
 		totalFollowers: Object,
 	})
 
-	const isDark = useDark({
-		selector: "body",
-	})
-	const toggleDark = useToggle(isDark)
-	const toggle = ref(isDark.value)
+	// const isDark = useDark({
+	// 	selector: "body",
+	// })
+	// const toggleDark = useToggle(isDark)
+	const toggle = ref(false)
 
 	const handleToggle = () => {
 		toggle.value = !toggle.value
