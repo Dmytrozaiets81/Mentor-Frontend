@@ -44,7 +44,8 @@
 				class="header__toggle"
 				type="button"
 				aria-labelledby="header__label"
-				role="switch">
+				role="switch"
+				:aria-checked="switchToggle">
 				<div
 					class="header__toggle-circle"
 					:class="{
@@ -89,6 +90,7 @@
 					background-color: var(--card);
 					position: absolute;
 					top: 50%;
+
 					transform: translate(1.688rem, -50%);
 					border-radius: 50%;
 					width: 1.125rem;

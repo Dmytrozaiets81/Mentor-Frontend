@@ -114,6 +114,7 @@
 				align-items: center;
 				place-self: flex-end;
 				gap: 0.1875rem;
+				padding-bottom: 0.31rem;
 			}
 			&__percentage {
 				font-size: 0.75rem;
