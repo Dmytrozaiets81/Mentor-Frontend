@@ -34,13 +34,16 @@
 		</div>
 		<div
 			class="header__right"
+			id="header__label"
 			@click="handleToggle">
 			<span class="header__label"
 				>{{ isDark ? "Light" : "Dark" }} Mode</span
 			>
 			<button
 				class="header__toggle"
-				type="button">
+				type="button"
+				aria-labelledby="header__label"
+				role="switch">
 				<div
 					class="header__toggle-circle"
 					:class="{ 'header__toggle-circle--active': toggle }"></div>
