@@ -1,6 +1,9 @@
 {
-	"title": "Social Media Dashboard",
-	"totalFollowers": "23,004",
+	"title": "social media dashboard",
+	"totalFollowers": {
+		"title": "total followers: ",
+		"number": "23,004"
+	},
 	"followers": [
 		{
 			"name": "facebook",
@@ -19,7 +22,7 @@
 		{
 			"name": "instagram",
 			"username": "@realnathanf",
-			"number": 11000,
+			"number": "11k",
 			"type": "followers",
 			"today": 1099
 		},
@@ -53,7 +56,7 @@
 		{
 			"type": "instagram",
 			"name": "profile views",
-			"number": 52000,
+			"number": "52k",
 			"progress": 1375
 		},
 		{
@@ -80,5 +83,6 @@
 			"number": 1407,
 			"progress": -12
 		}
-	]
+	],
+	"title2": "overview - today"
 }

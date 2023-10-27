@@ -1,0 +1,139 @@
+<script setup>
+	import { computed, ref } from "vue"
+	import { useDark, useToggle } from "@vueuse/core"
+
+	const props = defineProps({
+		title: String,
+		totalFollowers: Object,
+	})
+
+	const isDark = useDark({
+		selector: "body",
+	})
+	const toggleDark = useToggle(isDark)
+	const toggle = ref(isDark.value)
+
+	const handleToggle = () => {
+		toggle.value = !toggle.value
+		const body = document.querySelector("body")
+		body.classList.toggle("dark")
+		// isDark.value = !isDark.value
+		// toggleDark()
+	}
+</script>
+
+<template>
+	<header class="header">
+		<div class="header__left">
+			<h1 class="header__title">
+				{{ props.title }}
+			</h1>
+			<span class="header__info">
+				{{ totalFollowers.title + totalFollowers.number }}
+			</span>
+		</div>
+		<div
+			class="header__right"
+			@click="handleToggle">
+			<span class="header__label"
+				>{{ isDark ? "Light" : "Dark" }} Mode</span
+			>
+			<div class="header__toggle">
+				<div
+					class="header__toggle-circle"
+					:class="{ 'header__toggle-circle--active': toggle }"></div>
+			</div>
+		</div>
+	</header>
+</template>
+
+<style lang="scss">
+	@media (min-width: 0px) {
+		.header {
+			background-color: var(--top-bg);
+			padding: 2.25rem 1.56rem 5.25rem 1.56rem;
+			border-radius: 0rem 0rem 1.25rem 1.25rem;
+
+			&__title {
+				color: var(--big-text);
+				font-size: 1.5rem;
+				font-weight: 700;
+				text-transform: capitalize;
+			}
+			&__info {
+				font-weight: 700;
+				font-size: 0.875rem;
+				text-transform: capitalize;
+			}
+			&__label {
+				font-weight: 700;
+				font-size: 0.875rem;
+				text-transform: capitalize;
+			}
+			&__toggle {
+				width: 3rem;
+				height: 1.5rem;
+				background: var(--toggle);
+				border-radius: 1.25rem;
+				position: relative;
+				&-circle {
+					background-color: var(--card);
+					position: absolute;
+					top: 50%;
+					left: 27px;
+					transform: translate(0, -50%);
+					border-radius: 50%;
+					width: 18px;
+					height: 18px;
+					transition: left 0.5s ease-out,
+						background-color 0.2s ease-out;
+					&--active {
+						left: 3px;
+					}
+				}
+			}
+			&__left {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 1.5rem;
+				gap: 0.25rem;
+				justify-content: center;
+				align-items: flex-start;
+				border-bottom: 0.0625rem solid var(--card-hover);
+			}
+			&__right {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 1rem;
+
+				&:hover {
+					cursor: pointer;
+					color: var(--big-text);
+				}
+			}
+		}
+	}
+
+	@media (min-width: 376px) {
+		.header {
+			padding-left: 10.31rem;
+			padding-right: 10.31rem;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+
+			&__left {
+				flex-direction: column;
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+
+			&__right {
+				gap: 0.8125rem;
+			}
+		}
+	}
+</style>

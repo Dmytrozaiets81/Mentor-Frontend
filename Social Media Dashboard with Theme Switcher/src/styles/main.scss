@@ -1,0 +1,14 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+	line-height: normal;
+}
+
+* {
+	transition: all 0.2s ease-out;
+}

@@ -1,0 +1,28 @@
+:root {
+	// fixed
+	--primary-green: #1eb589;
+	--primary-red: #dc414c;
+	--facebook: #178ff5;
+	--twitter: #1da1f2;
+	--instagram: linear-gradient(to right, #fdc366, #df4896);
+	--youtube: #c4032b;
+
+	// light theme
+	--toggle: #aeb3cb;
+	--bg: #ffffff;
+	--top-bg: #f7f9ff;
+	--card: #f1f3fa;
+	--card-hover: #e1e4f0;
+	--text: #63687d;
+	--big-text: #1d1f29;
+
+	.dark {
+		--toggle: linear-gradient(to right, #388fe7, #40db82);
+		--bg: #1d1f29;
+		--top-bg: #20222f;
+		--card: #252b42;
+		--card-hover: #333a55;
+		--text: #8c98c6;
+		--big-text: #ffffff;
+	}
+}
