@@ -64,7 +64,7 @@
 
 			&__title {
 				color: var(--big-text);
-				font-size: 1.5rem;
+				font-size: 1.75rem;
 				font-weight: 700;
 				text-transform: capitalize;
 			}

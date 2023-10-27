@@ -94,7 +94,7 @@
 				width: 100%;
 				height: 0.25rem;
 				border-radius: 5px 5px 0 0;
-				margin-bottom: 1.75rem;
+				margin-bottom: calc(2rem - 0.25rem);
 
 				&--facebook {
 					background-color: var(--facebook);
