@@ -48,6 +48,7 @@
 
 <template>
 	<article class="main-card">
+		<h2 class="sr-only">{{ props.card.name + " " + props.card.type }}</h2>
 		<div :class="`main-card__bar ${barColor}`"></div>
 		<div class="main-card__social-container">
 			<img

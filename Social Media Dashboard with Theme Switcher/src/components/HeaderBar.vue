@@ -37,9 +37,7 @@
 			class="header__right"
 			id="header__label"
 			@click="handleToggle">
-			<span class="header__label"
-				>{{ switchToggle ? "Light" : "Dark" }} Mode</span
-			>
+			<span class="header__label">Dark Mode</span>
 			<button
 				class="header__toggle"
 				type="button"
