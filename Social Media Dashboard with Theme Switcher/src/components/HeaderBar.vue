@@ -1,5 +1,5 @@
 <script setup>
-	import { computed, ref } from "vue"
+	import { ref } from "vue"
 	import { useDark, useToggle } from "@vueuse/core"
 
 	const props = defineProps({
@@ -38,11 +38,13 @@
 			<span class="header__label"
 				>{{ isDark ? "Light" : "Dark" }} Mode</span
 			>
-			<div class="header__toggle">
+			<button
+				class="header__toggle"
+				type="button">
 				<div
 					class="header__toggle-circle"
 					:class="{ 'header__toggle-circle--active': toggle }"></div>
-			</div>
+			</button>
 		</div>
 	</header>
 </template>
@@ -80,16 +82,16 @@
 					background-color: var(--card);
 					position: absolute;
 					top: 50%;
-					left: 27px;
-					transform: translate(0, -50%);
+					transform: translate(27px, -50%);
 					border-radius: 50%;
 					width: 18px;
 					height: 18px;
-					transition: left 0.5s ease-out,
-						background-color 0.2s ease-out;
 					&--active {
-						left: 3px;
+						transform: translate(3px, -50%);
 					}
+				}
+				&:hover {
+					cursor: pointer;
 				}
 			}
 			&__left {
@@ -116,7 +118,7 @@
 		}
 	}
 
-	@media (min-width: 376px) {
+	@media (min-width: $small-breakpoint) {
 		.header {
 			padding-left: 10.31rem;
 			padding-right: 10.31rem;
