@@ -1,6 +1,6 @@
 <script setup>
-	import { ref } from "vue"
-	import { useDark, useToggle } from "@vueuse/core"
+	// import { ref } from "vue"
+	// import { useDark, useToggle } from "@vueuse/core"
 
 	const props = defineProps({
 		title: String,
@@ -11,10 +11,8 @@
 	// 	selector: "body",
 	// })
 	// const toggleDark = useToggle(isDark)
-	const toggle = ref(true)
 
 	const handleToggle = () => {
-		toggle.value = !toggle.value
 		const body = document.querySelector("body")
 		body.classList.toggle("dark")
 		// isDark.value = !isDark.value
