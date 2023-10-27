@@ -144,5 +144,21 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="text-center text-base text-white">
+			Challenge by
+			<a
+				class="text-blue-400 hover:underline"
+				href="https://www.frontendmentor.io"
+				target="_blank"
+				>Frontend Mentor</a
+			>
+			Coded by
+			<a
+				class="text-blue-400 hover:underline"
+				href="https://github.com/Juanescacha"
+				target="_blank"
+				>Juan Camargo</a
+			>
+		</div>
 	</footer>
 </template>

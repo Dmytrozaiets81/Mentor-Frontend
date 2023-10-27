@@ -151,6 +151,23 @@
 			class="mb-14 w-fit rounded-lg border border-white pb-[10px] pl-[37px] pr-9 pt-[11px] text-center text-base font-semibold uppercase leading-[19px] tracking-[2.5px] text-white lg:absolute lg:bottom-8 lg:right-8 lg:mb-0">
 			rules
 		</button>
+		<footer
+			class="absolute bottom-3 text-sm text-white lg:bottom-10 lg:text-lg">
+			Challenge by
+			<a
+				class="text-blue-400 hover:underline"
+				href="https://www.frontendmentor.io"
+				target="_blank"
+				>Frontend Mentor</a
+			>
+			Coded by
+			<a
+				class="text-blue-400 hover:underline"
+				href="https://github.com/Juanescacha"
+				target="_blank"
+				>Juan Camargo</a
+			>
+		</footer>
 	</div>
 	<div
 		class="absolute top-0 flex h-screen w-full flex-col items-center justify-between bg-white pb-[66px] pt-[95px] lg:left-1/2 lg:top-1/2 lg:h-fit lg:w-fit lg:-translate-x-1/2 lg:-translate-y-1/2 lg:gap-10 lg:rounded-lg lg:px-20 lg:py-10 lg:shadow-2xl"

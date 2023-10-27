@@ -210,4 +210,23 @@
 			</div>
 		</article>
 	</main>
+	<footer
+		class="text-lg font-semibold text-white absolute bottom-10 w-full text-center"
+	>
+		Challenge by
+		<a
+			class="hover:underline text-blue-400"
+			href="https://www.frontendmentor.io"
+			target="_blank"
+			>Frontend Mentor</a
+		>
+		Coded by
+		<a
+			class="hover:underline text-blue-400"
+			href="https://github.com/Juanescacha"
+			target="_blank"
+			>Juan Camargo</a
+		>
+	</footer>
 </template>
+
