@@ -12,22 +12,26 @@
 		:title="title"
 		:totalFollowers="totalFollowers" />
 	<main class="main">
-		<MainCard
-			v-for="card in followers"
-			:key="card.name"
-			:card="card" />
-		<h2 class="main__subtitle">{{ title2 }}</h2>
-		<SecondaryCard
-			v-for="card in todayOverview"
-			key="card.type"
-			:card="card" />
+		<section class="main__first-container">
+			<MainCard
+				v-for="card in followers"
+				:key="card.name"
+				:card="card" />
+		</section>
+		<section class="main__second-container">
+			<h2 class="main__subtitle">{{ title2 }}</h2>
+			<SecondaryCard
+				v-for="card in todayOverview"
+				key="card.type"
+				:card="card" />
+		</section>
 	</main>
 </template>
 
 <style lang="scss">
 	@media (min-width: 0px) {
 		.main {
-			padding: 0 1.56rem;
+			padding: 0 1.56rem 2.81rem 1.56rem;
 			margin-top: -2.75rem;
 
 			&__subtitle {
@@ -35,22 +39,43 @@
 				font-size: 1.5rem;
 				font-weight: 700;
 				text-transform: capitalize;
+				margin-top: 2.88rem;
+				margin-bottom: calc(1.69rem - 1rem);
+			}
+
+			&__first-container {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+			&__second-container {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
 			}
 		}
 	}
 
-	@media (min-width: 376px) {
+	@media (min-width: $small-breakpoint) {
 		.main {
-			padding: 0 10.31rem;
-			display: grid;
-			// grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-			grid-template-columns: repeat(4, 1fr);
-			column-gap: 1.88rem;
-			row-gap: 1.5rem;
+			padding-bottom: 4.69rem;
+			padding-left: 10.31rem;
+			padding-right: 10.31rem;
 
+			&__first-container {
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 1.88rem;
+			}
+			&__second-container {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 0;
+				row-gap: 1.5rem;
+				column-gap: 1.88rem;
+			}
 			&__subtitle {
 				grid-column: 1 / -1;
-				margin-top: 1.38rem;
 			}
 		}
 	}

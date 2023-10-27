@@ -36,15 +36,15 @@
 </script>
 
 <template>
-	<div class="secondary-card">
+	<article class="secondary-card">
 		<div class="secondary-card__title-container">
-			<div class="secondary-card__title">{{ props.card.name }}</div>
+			<h3 class="secondary-card__title">{{ props.card.name }}</h3>
 			<img
 				:src="socialIcon"
 				alt="social icon" />
 		</div>
 		<div class="secondary-card__info-container">
-			<div class="secondary-card__number">{{ props.card.number }}</div>
+			<span class="secondary-card__number">{{ props.card.number }}</span>
 			<div class="secondary-card__percentage-container">
 				<img
 					:src="arrowIcon"
@@ -61,7 +61,7 @@
 				>
 			</div>
 		</div>
-	</div>
+	</article>
 </template>
 
 <style lang="scss">
@@ -129,6 +129,6 @@
 		}
 	}
 
-	@media (min-width: 376px) {
+	@media (min-width: $small-breakpoint) {
 	}
 </style>

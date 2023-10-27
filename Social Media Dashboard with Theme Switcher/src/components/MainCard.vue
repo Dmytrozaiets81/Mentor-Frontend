@@ -47,7 +47,7 @@
 </script>
 
 <template>
-	<div class="main-card">
+	<article class="main-card">
 		<div :class="`main-card__bar ${barColor}`"></div>
 		<div class="main-card__social-container">
 			<img
@@ -72,7 +72,7 @@
 				>{{ Math.abs(props.card.today) }} today</span
 			>
 		</div>
-	</div>
+	</article>
 </template>
 
 <style lang="scss">
@@ -155,6 +155,9 @@
 		}
 	}
 
-	@media (min-width: 376px) {
+	@media (min-width: $small-breakpoint) {
+		.main-card {
+			flex: 1 1 0%;
+		}
 	}
 </style>
