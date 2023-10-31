@@ -1,4 +1,6 @@
 <script setup>
+	import { RouterLink } from "vue-router"
+
 	import { useDark, useToggle } from "@vueuse/core"
 	import { MoonIcon } from "@heroicons/vue/24/outline"
 	import { SunIcon } from "@heroicons/vue/24/solid"
@@ -10,7 +12,9 @@
 <template>
 	<header
 		class="flex w-full items-center justify-between px-4 py-[30px] dark:bg-fem-primaryLight">
-		<h1 class="text-sm font-extrabold">Where in the world?</h1>
+		<RouterLink to="/">
+			<h1 class="text-sm font-extrabold">Where in the world?</h1>
+		</RouterLink>
 		<button
 			@click="toggleDark()"
 			class="flex items-center gap-1 text-xs font-semibold">
