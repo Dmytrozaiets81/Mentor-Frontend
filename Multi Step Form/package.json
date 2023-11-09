@@ -17,6 +17,7 @@
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/test-utils": "^2.4.1",
     "jsdom": "^22.1.0",
+    "sass": "^1.69.5",
     "vite": "^4.4.11",
     "vitest": "^0.34.6"
   }
