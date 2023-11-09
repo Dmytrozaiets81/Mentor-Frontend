@@ -33,22 +33,13 @@
 	const arrowIcon = computed(() => (props.card.today > 0 ? upIcon : downIcon))
 
 	const barColor = computed(() => {
-		switch (props.card.name) {
-			case "facebook":
-				return "main-card__bar--facebook"
-			case "twitter":
-				return "main-card__bar--twitter"
-			case "instagram":
-				return "main-card__bar--instagram"
-			case "youtube":
-				return "main-card__bar--youtube"
-		}
+		return `main-card__bar--${props.card.name}`
 	})
 </script>
 
 <template>
 	<article class="main-card">
-		<h2 class="sr-only">{{ props.card.name + " " + props.card.type }}</h2>
+		<h3 class="sr-only">{{ props.card.name + " " + props.card.type }}</h3>
 		<div :class="`main-card__bar ${barColor}`"></div>
 		<div class="main-card__social-container">
 			<img
