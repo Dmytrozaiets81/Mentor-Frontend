@@ -1,14 +1,18 @@
 <script setup>
+	// components
 	import MainCard from "./components/MainCard.vue"
 	import SecondaryCard from "./components/SecondaryCard.vue"
-	import HeaderBar from "./components/HeaderBar.vue"
+	import HeaderApp from "./components/HeaderApp.vue"
+	import FooterApp from "./components/FooterApp.vue"
+
+	// data
 	import data from "../data.json"
 
 	const { title, totalFollowers, followers, todayOverview, title2 } = data
 </script>
 
 <template>
-	<HeaderBar
+	<HeaderApp
 		:title="title"
 		:totalFollowers="totalFollowers" />
 	<main class="app__main">
@@ -27,43 +31,15 @@
 				:card="card" />
 		</section>
 	</main>
-	<footer class="app__attribution">
-		Challenge by
-		<a
-			href="https://www.frontendmentor.io?ref=challenge"
-			target="_blank"
-			>Frontend Mentor</a
-		>
-		Coded by
-		<a
-			href="https://github.com/Juanescacha"
-			target="_blank"
-			>Juan Camargo</a
-		>
-	</footer>
+	<FooterApp />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@media (min-width: 0px) {
 		.app {
 			&__main {
 				padding: 0 1.56rem 2.81rem 1.56rem;
 				margin-top: -2.75rem;
-			}
-
-			&__attribution {
-				font-size: 1rem;
-				text-align: center;
-				color: var(--big-text);
-				margin-bottom: 3rem;
-
-				a {
-					color: var(--twitter);
-
-					&:hover {
-						text-decoration: underline;
-					}
-				}
 			}
 
 			&__subtitle {

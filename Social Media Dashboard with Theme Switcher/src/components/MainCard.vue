@@ -67,7 +67,7 @@
 	</article>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@media (min-width: 0px) {
 		.main-card {
 			background-color: var(--card);

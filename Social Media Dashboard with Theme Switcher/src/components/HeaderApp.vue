@@ -46,7 +46,7 @@
 	</header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@media (min-width: 0px) {
 		.header {
 			background-color: var(--top-bg);
