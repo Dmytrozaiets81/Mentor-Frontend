@@ -23,7 +23,7 @@ This repository contains all the challenges I have completed from [Frontend Ment
 
 ![](./Art%20Gallery%20Website/screenshots/preview.jpg)
 
--   [Live Deploy](https://fem-art-gallery-website-juanescacha.vercel.app/)
+-   [Live Deploy](https://fem-art-gallery-website.netlify.app/)
 -   [Source Code](https://github.com/Juanescacha/Frontend-Mentor/tree/main/Art%20Gallery%20Website)
 
 ## Audiophile Ecommerce Website
@@ -79,7 +79,7 @@ This repository contains all the challenges I have completed from [Frontend Ment
 
 ![](./Pod%20request%20access%20landing%20page/screenshots/preview.jpg)
 
--   [Live Deploy](https://fem-pod-request-access-landing-page-juanescacha.vercel.app/)
+-   [Live Deploy](https://fem-pod-request-access.netlify.app/)
 -   [Source Code](https://github.com/Juanescacha/Frontend-Mentor/tree/main/Pod%20request%20access%20landing%20page)
 
 ## Rest Countries Api With Color Theme Switcher
@@ -93,14 +93,14 @@ This repository contains all the challenges I have completed from [Frontend Ment
 
 ![](./Rock%20Paper%20Scissors%20Game/screenshots/preview.jpg)
 
--   [Live Deploy](https://fem-rock-paper-scissors-game-juanescacha.vercel.app/)
+-   [Live Deploy](https://fem-rock-paper-scissors-game.netlify.app/)
 -   [Source Code](https://github.com/Juanescacha/Frontend-Mentor/tree/main/Rock%20Paper%20Scissors%20Game)
 
 ## Social Media Dashboard with Theme Switcher
 
 ![](./Social%20Media%20Dashboard%20with%20Theme%20Switcher/screenshots/preview.jpg)
 
--   [Live Deploy]()
+-   [Live Deploy](https://fem-socialmedia-dashboard.netlify.app/)
 -   [Source Code](https://github.com/Juanescacha/Frontend-Mentor/tree/main/Social%20Media%20Dashboard%20with%20Theme%20Switcher)
 
 ## Todo App
