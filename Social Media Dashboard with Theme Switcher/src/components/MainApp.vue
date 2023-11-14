@@ -1,6 +1,6 @@
 <script setup>
-	import SecondaryCard from "./SecondaryCard.vue"
-	import MainCard from "./MainCard.vue"
+	import OverviewCard from "./OverviewCard.vue"
+	import DashboardCard from "./DashboardCard.vue"
 	const props = defineProps({
 		followers: Array,
 		title: String,
@@ -11,15 +11,15 @@
 <template>
 	<main class="main">
 		<section class="main__first-container">
-			<h2 class="sr-only">All Followers</h2>
-			<MainCard
+			<h2 class="sr-only">Dashboard</h2>
+			<DashboardCard
 				v-for="card in props.followers"
 				:key="card.name"
 				:card="card" />
 		</section>
 		<section class="main__second-container">
-			<h3 class="main__subtitle">{{ props.title }}</h3>
-			<SecondaryCard
+			<h2 class="main__subtitle">{{ props.title }}</h2>
+			<OverviewCard
 				v-for="card in props.todayOverview"
 				key="card.type"
 				:card="card" />
@@ -28,31 +28,29 @@
 </template>
 
 <style lang="scss" scoped>
-	@media (min-width: 0px) {
-		.main {
-			padding: 0 1.56rem 2.81rem 1.56rem;
-			margin-top: -2.75rem;
+	.main {
+		padding: 0 1.56rem 2.81rem 1.56rem;
+		margin-top: -2.75rem;
 
-			&__first-container {
-				display: flex;
-				flex-direction: column;
-				gap: 1.5rem;
-			}
+		&__first-container {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
 
-			&__second-container {
-				display: flex;
-				flex-direction: column;
-				gap: 1rem;
-			}
+		&__second-container {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
 
-			&__subtitle {
-				color: var(--big-text);
-				font-size: 1.5rem;
-				font-weight: 700;
-				text-transform: capitalize;
-				margin-top: 2.88rem;
-				margin-bottom: calc(1.69rem - 1rem);
-			}
+		&__subtitle {
+			color: var(--big-text);
+			font-size: 1.5rem;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-top: 2.88rem;
+			margin-bottom: calc(1.69rem - 1rem);
 		}
 	}
 
