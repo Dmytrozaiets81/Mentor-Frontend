@@ -39,13 +39,15 @@
 			"type": "facebook",
 			"name": "page views",
 			"number": 87,
-			"progress": 3
+			"progress": 3,
+			"username": "@nathanf"
 		},
 		{
 			"type": "facebook",
 			"name": "likes",
 			"number": 52,
-			"progress": -2
+			"progress": -2,
+			"username": "@nathanf"
 		},
 		{
 			"type": "instagram",
@@ -57,31 +59,36 @@
 			"type": "instagram",
 			"name": "profile views",
 			"number": "52k",
-			"progress": 1375
+			"progress": 1375,
+			"username": "@realnathanf"
 		},
 		{
 			"type": "twitter",
 			"name": "retweets",
 			"number": 117,
-			"progress": 303
+			"progress": 303,
+			"username": "@nathanf"
 		},
 		{
 			"type": "twitter",
 			"name": "likes",
 			"number": 507,
-			"progress": 553
+			"progress": 553,
+			"username": "@nathanf"
 		},
 		{
 			"type": "youtube",
 			"name": "likes",
 			"number": 107,
-			"progress": -19
+			"progress": -19,
+			"username": "Nathan F."
 		},
 		{
 			"type": "youtube",
 			"name": "total views",
 			"number": 1407,
-			"progress": -12
+			"progress": -12,
+			"username": "Nathan F."
 		}
 	],
 	"title2": "overview - today"
