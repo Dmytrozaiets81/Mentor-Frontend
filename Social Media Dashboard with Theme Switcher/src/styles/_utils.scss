@@ -9,3 +9,25 @@
 	white-space: nowrap;
 	border-width: 0;
 }
+
+%links {
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	@extend %link-focus;
+}
+
+%link-focus {
+	&:focus {
+		outline: 2px solid;
+		outline-color: var(--big-text);
+		outline-offset: 0;
+		border-radius: 2px;
+	}
+}
