@@ -4,12 +4,14 @@
 		<a
 			href="https://www.frontendmentor.io/profile/Juanescacha"
 			target="_blank"
-			>Frontend Mentor</a
+			aria-label="Go to Juan Camargo's Frontend Mentor Profile">
+			Frontend Mentor</a
 		>
 		Coded by
 		<a
 			href="https://github.com/Juanescacha"
 			target="_blank"
+			aria-label="Go to Juan Camargo's Github"
 			>Juan Camargo</a
 		>
 	</footer>
