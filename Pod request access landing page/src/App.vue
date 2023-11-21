@@ -1,232 +1,109 @@
 <script setup>
-	import { ref } from "vue";
-
-	const email = ref("");
-	const error = ref(false);
-	const message = ref("");
-
-	const handleSubmit = () => {
-		const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-		if (regex.test(email.value)) {
-			error.value = false;
-		} else {
-			if (email.value === "") {
-				message.value = "Oops! Please add your email";
-				error.value = true;
-			} else {
-				message.value = "Oops! Please check your email";
-			}
-
-			error.value = true;
-		}
-	};
+	import FooterApp from "./components/FooterApp.vue"
+	import ContentBase from "@/components/ContentBase.vue"
+	import LogoIcon from "@/components/LogoIcon.vue"
 </script>
 
 <template>
-	<main
-		class="bg-fem-base h-screen text-body text-fem-secondary overflow-auto"
-	>
-		<article
-			class="flex flex-col md:hidden items-center justify-center p-6"
-		>
-			<img
-				class="mt-[38px] z-50"
-				src="./assets/desktop/logo.svg"
-				alt="logo"
-			/>
-			<h1 class="text-center mt-[57px] z-50">
-				<span class="text-fem-primary block"
-					>Publish your podcasts</span
-				>
-				everywhere.
-			</h1>
-			<div class="mt-4 text-[15px] leading-[25px] text-center z-50">
-				Upload your audio to Pod with a single click. We’ll then
-				distribute your podcast to Spotify, Apple Podcasts, Google
-				Podcasts, Pocket Casts and more!
-			</div>
-			<nav class="flex items-center mt-[33px] z-50">
-				<a href="#">
-					<img
-						src="./assets/desktop/spotify.svg"
-						alt="spotify"
-						class="h-[17px]"
-					/>
-				</a>
-				<a href="#">
-					<img
-						src="./assets/desktop/apple-podcast.svg"
-						alt="Apple Podcast"
-						class="h-[17px] ml-[23px]"
-					/>
-				</a>
-				<a href="#">
-					<img
-						src="./assets/desktop/google-podcasts.svg"
-						alt="Google Podcasts"
-						class="h-[11px] ml-[25px]"
-					/>
-				</a>
-				<a href="#">
-					<img
-						src="./assets/desktop/pocket-casts.svg"
-						alt="Pocket Casts"
-						class="h-[15px] ml-4"
-					/>
-				</a>
-			</nav>
-			<form class="relative mt-12 z-50">
-				<input
-					v-model="email"
-					@keyup.enter="handleSubmit"
-					type="email"
-					class="bg-fem-neutral rounded-[28px] w-full min-w-[327px] h-[46px] placeholder:text-white/50 text-sm pl-8 font-bold text-white focus:outline-0"
-					placeholder="Email address"
-				/>
-				<button
-					class="bg-fem-primary text-black font-bold min-w-[327px] text-sm rounded-[28px] w-full py-[9px] leading-7 hover:bg-fem-primaryLight mt-4"
-					type="button"
-					@click="handleSubmit"
-				>
-					Request Access
-				</button>
-				<span
-					v-if="error"
-					class="absolute text-fem-red text-xs font-bold leading-normal block mt-2 text-center w-full"
-					>{{ message }}</span
-				>
-			</form>
-			<div
-				class="h-full w-full bottom-0 absolute bg-[url('./assets/mobile/image-host.jpg')] opacity-10 z-10 bg-no-repeat bg-cover"
-			/>
-			<div
-				class="bottom-0 h-full w-full absolute bg-fem-primary mix-blend-multiply opacity-0 z-0"
-			/>
-		</article>
-		<article
-			class="hidden md:flex w-full lg:max-w-[1440px] md:h-fit lg:h-full lg:mx-auto lg:items-center justify-end"
-		>
-			<img
-				src="./assets/desktop/bg-pattern-dots.svg"
-				alt="pattern"
-				class="absolute bottom-0 left-0 z-50 hidden md:block lg:hidden ml-[30px]"
-			/>
-			<div class="flex relative">
-				<img
-					class="absolute md:mt-[50px] lg:-mt-7"
-					src="./assets/desktop/logo.svg"
-					alt="logo"
-				/>
-				<img
-					src="./assets/desktop/bg-pattern-dots.svg"
-					alt="pattern"
-					class="absolute bottom-0 right-0 z-50 -mb-[52px] hidden lg:block"
-				/>
-				<section
-					class="bg-fem-base md:w-[635px] lg:w-[723px] flex flex-col h-fit items-start md:pt-[93px] lg:pt-[88px] self-end md:-mr-[398px] lg:-mr-[336px] z-20"
-				>
-					<h1>
-						<span class="text-fem-primary block"
-							>Publish your podcasts</span
-						>
-						everywhere.
-					</h1>
-					<p class="mt-6 w-[445px]">
-						Upload your audio to Pod with a single click. We’ll then
-						distribute your podcast to Spotify, Apple Podcasts,
-						Google Podcasts, Pocket Casts and more!
-					</p>
-					<form class="relative mt-10">
-						<input
-							v-model="email"
-							@keyup.enter="handleSubmit"
-							type="email"
-							class="bg-fem-neutral rounded-[28px] w-[427px] h-[56px] placeholder:text-white/50 text-sm pl-8 font-bold text-white focus:outline-0"
-							placeholder="Email address"
-						/>
-						<button
-							class="shadow-[0_2px_4px_0_rgba(84,230,175,0.14)] hover:shadow-none bg-fem-primary text-fem-base font-bold text-sm rounded-[28px] py-[9px] px-[27px] leading-7 -ml-[169px] hover:bg-fem-primaryLight -top-[0.4px] relative"
-							type="button"
-							@click="handleSubmit"
-						>
-							Request Access
-						</button>
-						<span
-							v-if="error"
-							class="absolute text-fem-red text-xs font-bold leading-normal block ml-8 mt-2"
-							>{{ message }}</span
-						>
-					</form>
-					<nav class="flex mt-16 items-center">
-						<a href="#">
-							<img
-								src="./assets/desktop/spotify.svg"
-								alt="spotify"
-							/>
-						</a>
-						<a href="#">
-							<img
-								src="./assets/desktop/apple-podcast.svg"
-								alt="Apple Podcast"
-								class="ml-10"
-							/>
-						</a>
-						<a href="#">
-							<img
-								src="./assets/desktop/google-podcasts.svg"
-								alt="Google Podcasts"
-								class="ml-[41px]"
-							/>
-						</a>
-						<a href="#">
-							<img
-								src="./assets/desktop/pocket-casts.svg"
-								alt="Pocket Casts"
-								class="ml-[27px]"
-							/>
-						</a>
-					</nav>
-				</section>
-
-				<section
-					class="md:w-[491px] md:h-[767px] lg:w-[888px] lg:h-[640px] relative"
-				>
-					<picture class="bg-white">
-						<source
-							media="(min-width: 1440px)"
-							srcset="./assets/desktop/image-host.jpg"
-						/>
-						<source
-							media="(min-width: 768px)"
-							srcset="./assets/tablet/image-host.jpg"
-						/>
-						<img
-							src="./assets/mobile/image-host.jpg"
-							alt="host person talking to a microphone"
-							class="bg-cover"
-						/>
-					</picture>
-				</section>
-			</div>
-		</article>
+	<main class="app__container">
+		<LogoIcon />
+		<ContentBase class="app__content" />
+		<img
+			src="./assets/desktop/bg-pattern-dots.svg"
+			class="app__pattern"
+			alt="background pattern"
+			aria-hidden="true" />
+		<div
+			class="app__bg-image"
+			aria-hidden="true" />
+		<FooterApp />
 	</main>
-	<footer
-		class="text-lg font-semibold text-white absolute bottom-10 w-full text-center"
-	>
-		Challenge by
-		<a
-			class="hover:underline text-blue-400"
-			href="https://www.frontendmentor.io"
-			target="_blank"
-			>Frontend Mentor</a
-		>
-		Coded by
-		<a
-			class="hover:underline text-blue-400"
-			href="https://github.com/Juanescacha"
-			target="_blank"
-			>Juan Camargo</a
-		>
-	</footer>
 </template>
 
+<style lang="scss" scoped>
+	.app {
+		&__bg-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			opacity: 0.1;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -1;
+			background-image: url("@/assets/mobile/image-host.jpg");
+		}
+		&__content {
+			margin-top: 3.56rem;
+		}
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: start;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			padding-top: 3.87rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+		&__pattern {
+			display: none;
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint) {
+		.app {
+			&__bg-image {
+				background-image: url("@/assets/tablet/image-host.jpg");
+				opacity: 0.7993;
+				background-position: right top;
+				background-size: auto;
+				height: 767px;
+			}
+			&__container {
+				padding-left: 2.44rem;
+				align-items: start;
+				padding-top: 3.13rem;
+			}
+			&__content {
+				margin-top: 9.5rem;
+				padding-right: 2.6rem;
+			}
+			&__pattern {
+				display: block;
+				margin-top: 7.6rem;
+				bottom: 0;
+			}
+		}
+	}
+	@media (min-width: $desktop-breakpoint) {
+		.app {
+			&__bg-image {
+				background-image: url("@/assets/desktop/image-host.jpg");
+				opacity: 0.7993;
+				margin-top: 8.12rem;
+				background-position: right top;
+				height: 640px;
+			}
+			&__container {
+				padding-left: 10.31rem;
+				align-items: start;
+				padding-top: 6.38rem;
+			}
+			&__content {
+				margin-top: 6.44rem;
+				padding-right: 8rem;
+			}
+			&__pattern {
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin-top: 44.88rem;
+			}
+		}
+	}
+</style>

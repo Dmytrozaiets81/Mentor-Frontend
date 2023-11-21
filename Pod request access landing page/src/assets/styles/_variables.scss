@@ -1,0 +1,15 @@
+@import "utils";
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1440px;
+
+:root {
+	--fem-color-primary: #54e6af;
+	--fem-color-primary-light: #b3ffe2;
+	--fem-color-secondary: #c2cbe5;
+	--fem-color-tertiary: #5a668a;
+	--fem-color-neutral: #2c344b;
+	--fem-color-base: #121725;
+	--fem-color-red: #fb3e3e;
+}
+

@@ -1,0 +1,9 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "utils";
+
+body {
+	font-family: "Chivo", system-ui, sans-serif;
+	background-color: var(--fem-color-base);
+}
