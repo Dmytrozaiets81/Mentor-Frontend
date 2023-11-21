@@ -1,5 +1,5 @@
 <script setup>
-	import FooterApp from "./components/FooterApp.vue"
+	import FooterApp from "@/components/FooterApp.vue"
 	import ContentBase from "@/components/ContentBase.vue"
 	import LogoIcon from "@/components/LogoIcon.vue"
 </script>
@@ -95,7 +95,7 @@
 			}
 			&__content {
 				margin-top: 6.44rem;
-				padding-right: 8rem;
+				padding-right: 5rem;
 			}
 			&__pattern {
 				display: block;
