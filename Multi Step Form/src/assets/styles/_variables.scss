@@ -1,0 +1,35 @@
+$small-breakpoint: 1000px;
+
+:root {
+	// light theme
+	--bg: #eff5ff;
+	--border-color: #d6d9e6;
+	--primary: #022959;
+	--secondary: #9699aa;
+	--tertiary: #abbcff;
+	--graphic1: #ffaf7e;
+	--graphic2: #f9818e;
+	--graphic3: #6259ff;
+	--focus: #483eff;
+	--error: #ee374a;
+	--active: #bee2fd;
+	--button: #164a8a;
+	--hover: #f8f9ff;
+
+	// dark theme for the future
+	// .dark {
+	// --bg: #eff5ff;
+	// --border-color: #d6d9e6;
+	// --primary: #022959;
+	// --secondary: #9699aa;
+	// --tertiary: #abbcff;
+	// --graphic1: #ffaf7e;
+	// --graphic2: #f9818e;
+	// --graphic3: #6259ff;
+	// --focus: #483eff;
+	// --error: #ee374a;
+	// --active: #bee2fd;
+	// --button: #164a8a;
+	// --hover: #f8f9ff;
+	// }
+}

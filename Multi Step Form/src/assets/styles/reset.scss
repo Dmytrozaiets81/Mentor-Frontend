@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	outline: 0;
+	text-decoration: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+	margin: 0;
+}
+
+:is(button, input) {
+	appearance: none;
+	background: none;
+	border: 0;
+	outline: 0;
+	padding: 0;
+}

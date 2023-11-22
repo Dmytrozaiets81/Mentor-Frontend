@@ -1,0 +1,11 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "utils";
+
+body {
+	font-family: "Ubuntu", system-ui, sans-serif;
+	background-color: var(--bg);
+	color: var(--secondary);
+	line-height: normal;
+}
