@@ -16,22 +16,22 @@
 		</p>
 		<div class="main__form-list">
 			<ul class="main__list">
-				<li class="main__item main__item-spotify">
+				<li class="main__item main__item--spotify">
 					<img
 						src="@/assets/desktop/spotify.svg"
 						alt="Spotify" />
 				</li>
-				<li class="main__item main__item-apple">
+				<li class="main__item main__item--apple">
 					<img
 						src="@/assets/desktop/apple-podcast.svg"
 						alt="Apple Podcast" />
 				</li>
-				<li class="main__item main__item-google">
+				<li class="main__item main__item--google">
 					<img
 						src="@/assets/desktop/google-podcasts.svg"
 						alt="Google Podcasts" />
 				</li>
-				<li class="main__item main__item-pocket">
+				<li class="main__item main__item--pocket">
 					<img
 						src="@/assets/desktop/pocket-casts.svg"
 						alt="Pocket Casts" />
@@ -123,19 +123,19 @@
 			&__item {
 				height: 1.8125rem;
 
-				&-apple {
+				&--apple {
 					margin-right: 2.56rem;
 				}
-				&-google {
+				&--google {
 					padding-top: 0.38rem;
 					padding-bottom: 0.31rem;
 					margin-right: 1.69rem;
 				}
-				&-pocket {
+				&--pocket {
 					padding-top: 0.12rem;
 					padding-bottom: 0.0625rem;
 				}
-				&-spotify {
+				&--spotify {
 					margin-right: 2.5rem;
 				}
 			}
