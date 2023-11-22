@@ -11,11 +11,11 @@
 		<img
 			src="./assets/desktop/bg-pattern-dots.svg"
 			class="app__pattern"
-			alt="background pattern"
-			aria-hidden="true" />
+			alt="" />
 		<div
 			class="app__bg-image"
-			aria-hidden="true" />
+			role="img"
+			aria-label="" />
 		<FooterApp />
 	</main>
 </template>
@@ -85,7 +85,6 @@
 				background-image: url("@/assets/desktop/image-host.jpg");
 				opacity: 0.7993;
 				margin-top: 8.12rem;
-				background-position: right top;
 				height: 640px;
 			}
 			&__container {
