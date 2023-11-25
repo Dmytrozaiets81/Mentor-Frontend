@@ -12,9 +12,15 @@
 
 %focus {
 	&:focus {
-		outline: 2px solid;
-		// outline-color: var();
-		outline-offset: 0;
-		border-radius: 2px;
+		outline-width: 2px;
+		outline-style: auto;
+		outline-color: black;
+		outline-offset: 4px;
+	}
+}
+
+%input-focus {
+	&:focus {
+		border-color: var(--graphic3);
 	}
 }
