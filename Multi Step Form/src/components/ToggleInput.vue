@@ -1,11 +1,14 @@
-<script setup></script>
+<script setup>
+	import { useFormStore } from "@/stores/form"
+	const formStore = useFormStore()
+</script>
 
 <template>
 	<label class="toggle__container">
 		<input
 			type="checkbox"
-			name=""
-			id=""
+			name="Plan Duration"
+			v-model="formStore.year"
 			class="sr-only toggle__input" />
 		<span class="toggle__slider"></span>
 	</label>
@@ -38,7 +41,7 @@
 				bottom: calc(50% - 0.375rem);
 				background-color: white;
 				border-radius: 50%;
-				transition: all 0.4s;
+				transition: all 0.2s;
 			}
 			.toggle__input:checked + & {
 				&:before {

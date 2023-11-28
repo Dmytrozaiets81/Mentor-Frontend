@@ -4,9 +4,7 @@
 
 <template>
 	<div class="content__wrapper">
-		<ThankyouIcon
-			width="56"
-			height="56" />
+		<ThankyouIcon class="content__logo" />
 		<h1 class="content__title">Thank you!</h1>
 		<p class="content__description">
 			Thanks for confirming your subscription! We hope you have fun using
@@ -42,6 +40,39 @@
 			font-weight: 400;
 			line-height: 1.5625rem;
 			text-align: center;
+		}
+		&__logo {
+			width: 56px;
+			height: 56px;
+		}
+	}
+
+	@media (min-width: $small-breakpoint) {
+		.content {
+			&__wrapper {
+				margin-top: 2.5rem;
+				margin-left: 6.25rem;
+				margin-right: 6.25rem;
+				margin-bottom: 2.5rem;
+				border-radius: 0;
+				box-shadow: none;
+				padding: 0;
+				width: 28.125rem;
+				height: 100%;
+				justify-content: center;
+			}
+			&__title {
+				font-size: 2rem;
+				width: 100%;
+				margin-top: 2rem;
+			}
+			&__description {
+				margin-top: 0.89rem;
+			}
+			&__logo {
+				width: 80px;
+				height: 80px;
+			}
 		}
 	}
 </style>

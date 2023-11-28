@@ -4,9 +4,11 @@
 	import ArcadeIcon from "@/assets/icons/ArcadeIcon.vue"
 	import ToggleInput from "@/components/ToggleInput.vue"
 
-	import { ref } from "vue"
+	import useFormatNumber from "../composables/useFormatNumber"
+	import { useFormStore } from "@/stores/form"
 
-	const test = ref()
+	const formStore = useFormStore()
+	const { formattedNumber } = useFormatNumber()
 </script>
 
 <template>
@@ -16,53 +18,82 @@
 			You have the option of monthly or yearly billing.
 		</p>
 		<div class="content__options">
-			<label class="content__option">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected': formStore.plan === 'Arcade',
+				}">
 				<input
+					required
 					type="radio"
 					name="plan"
-					value="1"
-					v-model="test"
+					value="Arcade"
+					v-model="formStore.plan"
 					class="sr-only" />
 				<ArcadeIcon height="2.5rem" />
 				<div class="content__info">
 					<h2 class="content__plan">Arcade</h2>
-					<p class="content__price">$9/mo</p>
+					<p class="content__price">
+						{{ formattedNumber(formStore.arcadePrice) }}
+					</p>
 				</div>
 			</label>
-			<label class="content__option">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected': formStore.plan === 'Advanced',
+				}">
 				<input
 					type="radio"
 					name="plan"
-					value="2"
-					v-model="test"
+					value="Advanced"
+					v-model="formStore.plan"
 					class="sr-only" />
 				<AdvancedIcon height="2.5rem" />
 				<div class="content__info">
 					<h2 class="content__plan">Advanced</h2>
-					<p class="content__price">$12/mo</p>
+					<p class="content__price">
+						{{ formattedNumber(formStore.advancedPrice) }}
+					</p>
 				</div>
 			</label>
-			<label class="content__option">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected': formStore.plan === 'Pro',
+				}">
 				<input
 					type="radio"
 					name="plan"
-					value="3"
-					v-model="test"
+					value="Pro"
+					v-model="formStore.plan"
 					class="sr-only" />
 				<ProIcon height="2.5rem" />
 				<div class="content__info">
 					<h2 class="content__plan">Pro</h2>
-					<p class="content__price">$15/mo</p>
+					<p class="content__price">
+						{{ formattedNumber(formStore.proPrice) }}
+					</p>
 				</div>
 			</label>
 		</div>
 
 		<div class="content__toggle">
-			<span class="content__duration content__duration--active">
+			<span
+				class="content__duration"
+				:class="{
+					'content__duration--active': formStore.year === false,
+				}">
 				Monthly
 			</span>
 			<ToggleInput />
-			<span class="content__duration">Yearly</span>
+			<span
+				class="content__duration"
+				:class="{
+					'content__duration--active': formStore.year === true,
+				}"
+				>Yearly</span
+			>
 		</div>
 	</div>
 </template>
@@ -146,6 +177,46 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.75rem;
+		}
+	}
+	@media (min-width: $small-breakpoint) {
+		.content {
+			&__wrapper {
+				margin-top: 2.5rem;
+				margin-left: 6.25rem;
+				margin-right: 6.25rem;
+				margin-bottom: 0rem;
+				border-radius: 0;
+				box-shadow: none;
+				padding: 0;
+				width: 28.125rem;
+			}
+			&__title {
+				font-size: 2rem;
+			}
+			&__description {
+				margin-top: 0.69rem;
+			}
+			&__options {
+				margin-top: 2.19rem;
+				flex-direction: row;
+				margin-bottom: 2rem;
+			}
+			&__option {
+				flex-direction: column;
+				width: 100%;
+				align-items: start;
+				padding: 1rem;
+				padding-top: 1.25rem;
+				gap: 2.44rem;
+			}
+			&__info {
+				gap: 0.44rem;
+			}
+			&__toggle {
+				justify-content: center;
+				gap: 1.5rem;
+			}
 		}
 	}
 </style>

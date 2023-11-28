@@ -10,3 +10,13 @@ body {
 	color: var(--secondary);
 	line-height: normal;
 }
+
+@media (min-width: $small-breakpoint) {
+	#app {
+		height: 100vh;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}

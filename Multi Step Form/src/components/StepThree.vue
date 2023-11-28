@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+	import useFormatNumber from "@/composables/useFormatNumber"
+	import { useFormStore } from "@/stores/form"
+
+	const formStore = useFormStore()
+	const { formattedNumber } = useFormatNumber()
+</script>
 
 <template>
 	<div class="content__wrapper">
@@ -7,9 +13,14 @@
 			Add-ons help enhance your gaming experience.
 		</p>
 		<div class="content__options">
-			<label class="content__option">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected': formStore.online === true,
+				}">
 				<input
 					type="checkbox"
+					v-model="formStore.online"
 					class="content__checkbox" />
 				<div class="content__option-info">
 					<span class="content__label">Online service</span>
@@ -17,31 +28,46 @@
 						Access to multiplayer games
 					</span>
 				</div>
-				<span class="content__price">+$1/mo</span>
+				<span class="content__price"
+					>+{{ formattedNumber(formStore.onlinePrice) }}</span
+				>
 			</label>
-			<label class="content__option">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected': formStore.storage === true,
+				}">
 				<input
 					type="checkbox"
+					v-model="formStore.storage"
 					class="content__checkbox" />
 				<div class="content__option-info">
-					<span class="content__label">Online service</span>
-					<span class="content__info">
-						Access to multiplayer games
-					</span>
+					<span class="content__label">Larger storage</span>
+					<span class="content__info"> Extra 1TB of cloud save </span>
 				</div>
-				<span class="content__price">+$1/mo</span>
+				<span class="content__price"
+					>+{{ formattedNumber(formStore.storagePrice) }}</span
+				>
 			</label>
-			<label class="content__option content__option--selected">
+			<label
+				class="content__option"
+				:class="{
+					'content__option--selected':
+						formStore.customizable === true,
+				}">
 				<input
 					type="checkbox"
+					v-model="formStore.customizable"
 					class="content__checkbox" />
 				<div class="content__option-info">
-					<span class="content__label">Online service</span>
+					<span class="content__label">Customizable profile</span>
 					<span class="content__info">
-						Access to multiplayer games
+						Custom theme on your profile
 					</span>
 				</div>
-				<span class="content__price">+$1/mo</span>
+				<span class="content__price"
+					>+{{ formattedNumber(formStore.customizablePrice) }}</span
+				>
 			</label>
 		</div>
 	</div>
@@ -121,6 +147,51 @@
 			font-weight: 400;
 			color: var(--focus);
 			line-height: 1.25rem;
+		}
+	}
+
+	@media (min-width: $small-breakpoint) {
+		.content {
+			&__wrapper {
+				margin-top: 2.5rem;
+				margin-left: 6.25rem;
+				margin-right: 6.25rem;
+				margin-bottom: 0rem;
+				border-radius: 0;
+				box-shadow: none;
+				padding: 0;
+				width: 28.125rem;
+			}
+			&__title {
+				font-size: 2rem;
+			}
+			&__description {
+				margin-top: 0.69rem;
+			}
+			&__options {
+				margin-top: 2.19rem;
+				gap: 1rem;
+			}
+			&__option {
+				padding-top: 1rem;
+				padding-bottom: 1.25rem;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+			&__option-info {
+				margin-right: auto;
+				margin-left: 1.5rem;
+				gap: 0.44rem;
+			}
+			&__label {
+				font-size: 1rem;
+			}
+			&__info {
+				font-size: 0.9375rem;
+			}
+			&__price {
+				font-size: 0.9375rem;
+			}
 		}
 	}
 </style>

@@ -1,4 +1,25 @@
-<script setup></script>
+<script setup>
+	import { computed } from "vue"
+	import { useFormStore } from "@/stores/form"
+	import useFormatNumber from "@/composables/useFormatNumber"
+	const formStore = useFormStore()
+	const { formattedNumber } = useFormatNumber()
+
+	const planName = computed(() => {
+		let duration = formStore.year ? "Yearly" : "Monthly"
+		return formStore.plan + " (" + duration + ")"
+	})
+
+	const planPrice = computed(() => {
+		if (formStore.plan === "Arcade") {
+			return formStore.arcadePrice
+		} else if (formStore.plan === "Advanced") {
+			return formStore.advancedPrice
+		} else if (formStore.plan === "Pro") {
+			return formStore.proPrice
+		}
+	})
+</script>
 
 <template>
 	<div class="content__wrapper">
@@ -9,28 +30,33 @@
 		<div class="content__summary">
 			<div class="content__item">
 				<div>
-					<h2 class="content__plan">Arcade (Monthly)</h2>
+					<h2 class="content__plan">{{ planName }}</h2>
 					<button
 						class="content__edit"
 						type="button">
 						Change
 					</button>
 				</div>
-				<span class="content__subtotal">$9/mo</span>
+				<span class="content__subtotal">{{
+					formattedNumber(planPrice)
+				}}</span>
 			</div>
-			<hr class="content__divider content__item" />
-			<div class="content__item">
-				Online service
-				<span>+$1/mo</span>
-			</div>
-			<div class="content__item">
-				Larger storage
-				<span>+$2/mo</span>
+			<hr
+				v-if="formStore.addons.length >= 1"
+				class="content__divider content__item" />
+			<div
+				class="content__item"
+				v-for="addon in formStore.addons"
+				:key="addon.name">
+				{{ addon.name }}
+				<span>+{{ formattedNumber(addon.price) }}</span>
 			</div>
 		</div>
 		<p class="content__total">
 			Total (per month)
-			<span class="content__total-price">+$12/mo</span>
+			<span class="content__total-price"
+				>+{{ formattedNumber(formStore.totalPrice) }}</span
+			>
 		</p>
 	</div>
 </template>
@@ -110,13 +136,54 @@
 			text-decoration: underline;
 			line-height: 1.25rem;
 			&:hover {
-				text-decoration: none;
+				color: var(--focus);
 			}
 		}
 		&__item {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+		}
+	}
+
+	@media (min-width: $small-breakpoint) {
+		.content {
+			&__wrapper {
+				margin-top: 2.5rem;
+				margin-left: 6.25rem;
+				margin-right: 6.25rem;
+				margin-bottom: 0rem;
+				border-radius: 0;
+				box-shadow: none;
+				padding: 0;
+				width: 28.125rem;
+			}
+			&__title {
+				font-size: 2rem;
+			}
+			&__description {
+				margin-top: 0.69rem;
+			}
+			&__summary {
+				margin-top: 2.19rem;
+				gap: 1rem;
+			}
+			&__divider {
+				margin-top: 0.5rem;
+			}
+			&__total-price {
+				font-size: 1.25rem;
+			}
+			&__item {
+				font-size: 0.875rem;
+				line-height: 1.25rem;
+			}
+			&__subtotal {
+				font-size: 1rem;
+			}
+			&__plan {
+				font-size: 1rem;
+			}
 		}
 	}
 </style>
