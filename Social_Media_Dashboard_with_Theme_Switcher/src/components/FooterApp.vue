@@ -2,13 +2,13 @@
 	<footer class="attribution">
 		Challenge by
 		<a
-			href="https://github.com/Dmytrozaiets81"
+			href="https://github.com/Dmytrozaiets81/Mentor-Frontend"
 			target="_blank"
 			>Frontend Mentor</a
 		>
 		Coded by
 		<a
-			href="https://github.com/Dmytrozaiets81/Mentor-Frontend"
+			href="https://github.com/Dmytrozaiets81"
 			target="_blank"
 			>Dmytro Zaiets</a
 		>
