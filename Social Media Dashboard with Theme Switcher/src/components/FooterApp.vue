@@ -2,15 +2,15 @@
 	<footer class="attribution">
 		Challenge by
 		<a
-			href="https://www.frontendmentor.io/profile/Juanescacha"
+			href="https://github.com/Dmytrozaiets81"
 			target="_blank"
 			>Frontend Mentor</a
 		>
 		Coded by
 		<a
-			href="https://github.com/Juanescacha"
+			href="https://github.com/Dmytrozaiets81/Mentor-Frontend"
 			target="_blank"
-			>Juan Camargo</a
+			>Dmytro Zaiets</a
 		>
 	</footer>
 </template>
