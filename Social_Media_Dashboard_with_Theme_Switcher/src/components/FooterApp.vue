@@ -8,7 +8,7 @@
 		>
 		Coded by
 		<a
-			href="https://github.com/Dmytrozaiets81/Mentor-Frontend/"
+			href="https://github.com/Dmytrozaiets81/Mentor-Frontend"
 			target="_blank"
 			>Dmytro Zaiets</a
 		>
