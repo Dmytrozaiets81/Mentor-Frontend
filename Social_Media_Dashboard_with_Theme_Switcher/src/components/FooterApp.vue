@@ -2,7 +2,7 @@
 	<footer class="attribution">
 		Challenge by
 		<a
-			href="https://github.com/Dmytrozaiets81/Mentor-Frontend"
+			href="https://github.com/Dmytrozaiets81/Mentor-Frontend/tree/main/Social_Media_Dashboard_with_Theme_Switcher"
 			target="_blank"
 			>Frontend Mentor</a
 		>
