@@ -80,7 +80,7 @@
 			<a
 				class="hover:underline"
 				:class="{'text-blue-400': color === 'black', 'text-white': color === 'gold'}"
-				href="https://www.frontendmentor.io"
+				href="https://github.com/Dmytrozaiets81/Mentor-Frontend/tree/main/Art_Gallery_Website"
 				target="_blank"
 				>Frontend Mentor</a
 			>
@@ -88,9 +88,9 @@
 			<a
 				class="hover:underline"
 				:class="{'text-blue-400': color === 'black', 'text-white': color === 'gold'}"
-				href="https://github.com/Juanescacha"
+				href="https://github.com/Dmytrozaiets81"
 				target="_blank"
-				>Juan Camargo</a
+				>Dmytro Zaiets</a
 			>
 	</span>
 </div>
