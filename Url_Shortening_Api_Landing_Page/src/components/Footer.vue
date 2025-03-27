@@ -148,16 +148,16 @@
 			Challenge by
 			<a
 				class="text-blue-400 hover:underline"
-				href="https://www.frontendmentor.io"
+				href="https://github.com/Dmytrozaiets81/Mentor-Frontend/tree/main/Url_Shortening_Api_Landing_Page"
 				target="_blank"
 				>Frontend Mentor</a
 			>
 			Coded by
 			<a
 				class="text-blue-400 hover:underline"
-				href="https://github.com/Juanescacha"
+				href="https://github.com/Dmytrozaiets81"
 				target="_blank"
-				>Juan Camargo</a
+				>Dmytro Zaiets</a
 			>
 		</div>
 	</footer>
