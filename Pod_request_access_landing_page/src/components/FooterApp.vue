@@ -2,17 +2,17 @@
 	<footer class="attribution">
 		Challenge by
 		<a
-			href="https://www.frontendmentor.io/profile/Juanescacha"
+			href="https://github.com/Dmytrozaiets81/Mentor-Frontend/tree/main/Pod_request_access_landing_page"
 			target="_blank"
 			aria-label="Go to Juan Camargo's Frontend Mentor Profile">
 			Frontend Mentor</a
 		>
 		Coded by
 		<a
-			href="https://github.com/Juanescacha"
+			href="https://github.com/Dmytrozaiets81/"
 			target="_blank"
 			aria-label="Go to Juan Camargo's Github"
-			>Juan Camargo</a
+			>Dmytro Zaiets</a
 		>
 	</footer>
 </template>
